@@ -38,8 +38,10 @@
   ul.markets li b { display:block; }
 
   .partners { text-align:center; }
-  .partners span { color:var(--muted); font-size:13px; text-transform:uppercase; letter-spacing:.1em; }
-  .partners .logos { display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:32px 56px; margin-top:28px; }
+  .partners .logos { display:flex; justify-content:center; flex-wrap:wrap; gap:40px 64px; }
+  .partners figure { display:flex; flex-direction:column; align-items:center; gap:14px; }
+  .partners figcaption { color:var(--muted); font-size:13px; text-transform:uppercase; letter-spacing:.1em; }
+  .partners .mark { height:60px; display:flex; align-items:center; }
   .partners img { display:block; height:36px; width:auto; opacity:.85; }
   .partners img.tall { height:60px; }
 
@@ -101,11 +103,10 @@
 
   <section class="partners" style="padding-top:0;">
     <div class="wrap">
-      <span>Supported by</span>
       <div class="logos">
-        <img src="img/logo-tudelft.png" alt="TU Delft" class="tall" width="710" height="278" loading="lazy">
-        <img src="img/logo-eth.png" alt="ETH Zürich" width="566" height="101" loading="lazy">
-        <img src="img/logo-yesdelft.png" alt="YES!Delft" width="397" height="96" loading="lazy">
+        <figure><figcaption>Incubated at</figcaption><div class="mark"><img src="img/logo-yesdelft.png" alt="YES!Delft" width="397" height="96" loading="lazy"></div></figure>
+        <figure><figcaption>Studied at</figcaption><div class="mark"><img src="img/logo-tudelft.png" alt="TU Delft" class="tall" width="710" height="278" loading="lazy"></div></figure>
+        <figure><figcaption>Research at</figcaption><div class="mark"><img src="img/logo-eth.png" alt="ETH Zürich" width="566" height="101" loading="lazy"></div></figure>
       </div>
     </div>
   </section>
