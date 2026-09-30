@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ORB Dynamics</title>
+<meta name="description" content="Autonomous hydrogen airships for persistent aerial watch: wildfire detection and infrastructure inspection.">
+<style>
+  :root { --bg:#101014; --fg:#ececef; --muted:#9a9aa3; --line:#26262d; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  a { color:inherit; }
+  .wrap { max-width:1100px; margin:0 auto; padding:0 24px; }
+
+  header { padding:24px 0; }
+  header .wrap { display:flex; justify-content:space-between; align-items:center; }
+  .logo { font-weight:700; letter-spacing:.18em; }
+  header a.cta { font-size:14px; text-decoration:none; border:1px solid var(--line); padding:8px 16px; border-radius:999px; }
+
+  .hero { text-align:center; padding:48px 0 0; }
+  .hero h1 { font-size:clamp(32px,6vw,60px); line-height:1.1; font-weight:600; letter-spacing:-.02em; }
+  .hero p { color:var(--muted); font-size:clamp(16px,2.2vw,20px); max-width:620px; margin:16px auto 0; }
+  .hero img { display:block; width:100%; max-width:1280px; margin:24px auto 0; }
+
+  .stats { display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .stats div { padding:28px 16px; text-align:center; }
+  .stats div + div { border-left:1px solid var(--line); }
+  .stats b { display:block; font-size:24px; font-weight:600; }
+  .stats span { color:var(--muted); font-size:13px; text-transform:uppercase; letter-spacing:.1em; }
+
+  section { padding:80px 0; }
+  .split { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; }
+  .split img { width:100%; display:block; }
+  h2 { font-size:28px; font-weight:600; letter-spacing:-.01em; margin-bottom:16px; }
+  .muted { color:var(--muted); }
+  ul.markets { list-style:none; margin-top:20px; }
+  ul.markets li { padding:12px 0; border-top:1px solid var(--line); }
+  ul.markets li b { display:block; }
+
+  footer { border-top:1px solid var(--line); padding:32px 0; color:var(--muted); font-size:14px; }
+  footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+
+  @media (max-width:760px) {
+    .stats { grid-template-columns:repeat(2,1fr); }
+    .stats div:nth-child(3) { border-left:0; }
+    .stats div:nth-child(n+3) { border-top:1px solid var(--line); }
+    .split { grid-template-columns:1fr; gap:24px; }
+    section { padding:56px 0; }
+    br.lg { display:none; }
+    .stats b { font-size:19px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">ORB DYNAMICS</div>
+    <a class="cta" href="mailto:hello@example.com">Contact</a>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <h1>Hydrogen airships for <br class="lg">persistent aerial watch</h1>
+      <p>Autonomous, long-endurance airships that stay on station for a day or more, with detail on the ground.</p>
+    </div>
+    <img src="img/airship-side.jpg" alt="ORB Dynamics airship render, side view" width="1280" height="720">
+  </div>
+
+  <div class="wrap">
+    <div class="stats">
+      <div><b>24 hrs+</b><span>Endurance</span></div>
+      <div><b>1,000–2,000 km</b><span>Range</span></div>
+      <div><b>Zero carbon</b><span>Emissions</span></div>
+      <div><b>Hydrogen</b><span>Safe by design</span></div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap split">
+      <img src="img/airship-front.jpg" alt="ORB Dynamics airship render, three-quarter view" width="1280" height="720" loading="lazy">
+      <div>
+        <h2>One platform, multiple markets</h2>
+        <p class="muted">Persistent autonomous watch wherever coverage is thin.</p>
+        <ul class="markets">
+          <li><b>Wildfire detection</b><span class="muted">Early alerts for fire crews</span></li>
+          <li><b>Infrastructure &amp; government</b><span class="muted">Powerlines, pipelines, rail and maritime patrol</span></li>
+          <li><b>Cargo transport</b><span class="muted">Autonomous middle-mile freight</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0; text-align:center;">
+    <div class="wrap">
+      <h2>Make the ORB airship fly</h2>
+      <p class="muted">We are seeking expertise, support and funding.</p>
+      <p style="margin-top:24px;"><a class="cta" href="mailto:hello@example.com" style="text-decoration:none;border:1px solid var(--line);padding:12px 24px;border-radius:999px;display:inline-block;">Get in touch</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 ORB Dynamics</span>
+    <span>Founded by Ben O’Regan &amp; George Beacom</span>
+  </div>
+</footer>
+
+</body>
+</html>
