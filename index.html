@@ -41,9 +41,10 @@
   .partners .logos { display:flex; justify-content:center; flex-wrap:wrap; gap:40px 64px; }
   .partners figure { display:flex; flex-direction:column; align-items:center; gap:14px; }
   .partners figcaption { color:var(--muted); font-size:13px; text-transform:uppercase; letter-spacing:.1em; }
-  .partners .mark { min-height:60px; display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:24px 48px; }
+  .partners .mark { min-height:60px; display:flex; align-items:flex-start; justify-content:center; flex-wrap:wrap; gap:24px 48px; }
   .partners img { display:block; height:36px; width:auto; opacity:.85; }
   .partners img.tall { height:60px; }
+  .partners img.drop { margin-top:28px; } /* centre on TU Delft wordmark, which sits below its flame */
 
   footer { border-top:1px solid var(--line); padding:32px 0; color:var(--muted); font-size:14px; }
   footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
@@ -104,7 +105,7 @@
   <section class="partners" style="padding-top:0;">
     <div class="wrap">
       <div class="logos">
-        <figure><figcaption>Incubated at</figcaption><div class="mark"><img src="img/logo-yesdelft.png" alt="YES!Delft" width="397" height="96" loading="lazy"></div></figure>
+        <figure><figcaption>Incubated at</figcaption><div class="mark"><img src="img/logo-yesdelft.png" alt="YES!Delft" class="drop" width="397" height="96" loading="lazy"></div></figure>
         <figure><figcaption>Research from</figcaption><div class="mark"><img src="img/logo-tudelft.png" alt="TU Delft" class="tall" width="710" height="278" loading="lazy"></div></figure>
       </div>
     </div>
