@@ -62,6 +62,22 @@
   .partners img.tall { height:60px; }
   .partners img.drop { margin-top:28px; } /* centre on TU Delft wordmark, which sits below its flame */
 
+  .coverage { padding-top:0; }
+  .coverage .head { display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px 32px; margin-bottom:20px; }
+  .coverage .head p { max-width:560px; }
+  .regions { display:flex; flex-wrap:wrap; gap:8px; }
+  .regions button { font:inherit; font-size:14px; color:var(--fg); background:none; border:1px solid var(--line); padding:6px 14px; border-radius:999px; cursor:pointer; }
+  .regions button[aria-pressed="true"] { background:var(--fg); color:var(--bg); border-color:var(--fg); }
+  #map { height:440px; border:1px solid var(--line); background:#0b0b0e; }
+  #map .leaflet-tile-pane { filter:invert(1) hue-rotate(180deg) brightness(.85) contrast(.9) saturate(.35); }
+  #map .leaflet-control-attribution { background:rgba(16,16,20,.8); color:var(--muted); }
+  #map .leaflet-control-attribution a { color:var(--fg); }
+  #map .leaflet-bar a { background:#1b1b21; color:var(--fg); border-color:var(--line); }
+  .readout { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px 24px; margin-top:16px; font-size:14px; }
+  .readout b { font-size:18px; font-weight:600; }
+  .readout label { color:var(--muted); cursor:pointer; user-select:none; }
+  .coverage small { display:block; margin-top:12px; color:var(--muted); font-size:12px; }
+
   footer { border-top:1px solid var(--line); padding:32px 0; color:var(--muted); font-size:14px; }
   footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
 
@@ -74,6 +90,7 @@
     br.lg { display:none; }
     .stats b { font-size:19px; }
     .logo img { height:12px; }
+    #map { height:360px; }
   }
 </style>
 <script data-goatcounter="https://orbdynamics.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -120,6 +137,29 @@
     </div>
   </section>
 
+  <section class="coverage">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <h2>What one airship can watch</h2>
+          <p class="muted">Line of sight from 100&nbsp;m altitude reaches about 36&nbsp;km in every direction. Tap the map to move the airship.</p>
+        </div>
+        <div class="regions" role="group" aria-label="Region">
+          <button type="button" data-lat="52.15" data-lng="5.85" aria-pressed="true">Veluwe, NL</button>
+          <button type="button" data-lat="39.93" data-lng="-8.20">Central Portugal</button>
+          <button type="button" data-lat="43.30" data-lng="6.35">Provence, FR</button>
+          <button type="button" data-lat="38.85" data-lng="23.35">Evia, GR</button>
+        </div>
+      </div>
+      <div id="map" role="img" aria-label="Map showing the area within line of sight of one ORB airship"></div>
+      <div class="readout">
+        <span><b id="cov-area">≈4,000 km²</b> <span class="muted">in view from one airship</span></span>
+        <label><input type="checkbox" id="cov-range"> Show 1,000&nbsp;km transit range</label>
+      </div>
+      <small>Radius is the geometric horizon for a sensor 100&nbsp;m above flat ground (√(2Rh) ≈ 35.7&nbsp;km). Terrain, haze and sensor resolution shorten practical detection range.</small>
+    </div>
+  </section>
+
   <section class="partners" style="padding-top:0;">
     <div class="wrap">
       <div class="logos">
@@ -145,5 +185,53 @@
   </div>
 </footer>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" integrity="sha512-h9FcoyWjHcOcmEVkxOfTLnmZFWIH0iZhZT1H2TbOq55xssQGEJHEaIm+PgoUaZbRvQTNTluNOEfb1ZRy6D3BOw==" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" integrity="sha512-puJW3E/qXDqYp9IfhAI54BJEaWIfloJ7JWs7OeD5i6ruC9JZL1gERT1wjtwXFlh7CjE7ZJ+/vcRZRkIYIb6p4g==" crossorigin="anonymous"></script>
+<script>
+(function () {
+  if (!window.L) return;
+  var R_EARTH = 6371000, ALT = 100;                  // m
+  var LOS = Math.sqrt(2 * R_EARTH * ALT);            // geometric horizon, ~35.7 km
+  var RANGE = 1000000;                               // 1,000 km transit range
+
+  var here = L.latLng(52.15, 5.85);
+  // Leaflet defers adding layers until the map has a view, and Circle.getBounds needs the map
+  var map = L.map('map', { scrollWheelZoom: false, dragging: !L.Browser.mobile, tap: false, zoomSnap: 0.5 }).setView(here, 9);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 12, minZoom: 3,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
+  var range = L.circle(here, { radius: RANGE, color: '#9a9aa3', weight: 1, dashArray: '4 6', fill: false, interactive: false });
+  var view = L.circle(here, { radius: LOS, color: '#ececef', weight: 1.5, fillColor: '#ececef', fillOpacity: 0.15, interactive: false }).addTo(map);
+  var ship = L.circleMarker(here, { radius: 5, color: '#101014', weight: 2, fillColor: '#ececef', fillOpacity: 1, interactive: false }).addTo(map);
+  var showRange = document.getElementById('cov-range');
+
+  function frame() {
+    map.fitBounds((showRange.checked ? range : view).getBounds(), { padding: [24, 24] });
+  }
+  function moveTo(ll, refit) {
+    here = ll; view.setLatLng(ll); ship.setLatLng(ll); range.setLatLng(ll);
+    if (refit) frame();
+  }
+
+  map.on('click', function (e) { moveTo(e.latlng, false); });
+  showRange.addEventListener('change', function () {
+    if (showRange.checked) range.addTo(map); else range.remove();
+    frame();
+  });
+  var buttons = document.querySelectorAll('.regions button');
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      buttons.forEach(function (x) { x.setAttribute('aria-pressed', x === b); });
+      moveTo(L.latLng(+b.dataset.lat, +b.dataset.lng), true);
+    });
+  });
+
+  document.getElementById('cov-area').textContent =
+    '≈' + (Math.round(Math.PI * LOS * LOS / 1e6 / 100) * 100).toLocaleString('en') + ' km²';
+  frame();
+})();
+</script>
 </body>
 </html>
