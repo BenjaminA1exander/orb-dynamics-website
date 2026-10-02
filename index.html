@@ -40,7 +40,6 @@
   .spin { position:relative; max-width:1280px; margin:0 auto; cursor:grab; touch-action:pan-y; user-select:none; -webkit-user-select:none; }
   .spin.dragging { cursor:grabbing; }
   .spin img { pointer-events:none; }
-  .spin canvas { display:block; width:100%; height:auto; margin:24px auto 0; pointer-events:none; }
   .spin-hint { position:absolute; left:50%; bottom:6%; transform:translateX(-50%); font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); opacity:0; transition:opacity .6s; pointer-events:none; }
   .spin.ready .spin-hint { opacity:.8; }
   .spin.touched .spin-hint { opacity:0; }
@@ -196,69 +195,35 @@
 </footer>
 
 <script>
-// Turntable: 72 renders at 5 deg steps. Shows the first frame at once, loads the rest in the
-// background, then turns slowly until the visitor drags it. The angle is CONTINUOUS and each
-// redraw cross-fades the two nearest renders, so the turn is smooth at the display's refresh
-// rate instead of stepping 5 degrees at a time -- stepping read as jerky at any speed.
+// Turntable: 72 renders at 5 deg steps, drag to rotate. Shows the first frame at once and
+// loads the rest in the background. Always ONE sharp render on screen: cross-fading neighbours
+// to smooth an automatic turn blurred the ship, and stepping 5 deg at a time read as jerky,
+// so it only moves when the visitor moves it.
 (function () {
   var box = document.getElementById('spin'), img = box.querySelector('img');
   var N = 72, STEP = 5, START = 16;                 // frame 16 = az 080, the original side view
-  var SPEED = 12 / STEP;                            // frames per second: 12 deg/s, 30 s a turn
-  var frames = [], loaded = 0, a = START, auto = false, visible = true, last = 0;
-  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var cv = document.createElement('canvas'), ctx = cv.getContext('2d');
+  var frames = [], loaded = 0, i = START;
   function src(k) { return 'img/spin/az' + String(k * STEP).padStart(3, '0') + '.jpg'; }
+  function show(k) { i = ((k % N) + N) % N; img.src = frames[i].src; }
 
-  function draw() {
-    var f = Math.floor(a), t = a - f, k = ((f % N) + N) % N;
-    ctx.globalAlpha = 1;
-    ctx.drawImage(frames[k], 0, 0, cv.width, cv.height);
-    if (t > 0.002) {
-      ctx.globalAlpha = t;
-      ctx.drawImage(frames[(k + 1) % N], 0, 0, cv.width, cv.height);
-    }
-  }
-  function tick(now) {
-    if (!auto || !visible) { last = 0; return; }
-    if (last) a += SPEED * Math.min(0.1, (now - last) / 1000);   // clamp after a stalled tab
-    last = now;
-    draw();
-    requestAnimationFrame(tick);
-  }
-  function run() { if (auto && visible && !last) requestAnimationFrame(tick); }
-
-  function start() {
-    cv.width = frames[0].naturalWidth; cv.height = frames[0].naturalHeight;
-    draw();
-    img.replaceWith(cv);
-    box.classList.add('ready');
-    auto = !still;
-    run();
-  }
   for (var k = 0; k < N; k++) {
     var f = new Image();
-    f.onload = function () { if (++loaded === N) start(); };
+    f.onload = function () { if (++loaded === N) box.classList.add('ready'); };
     f.src = src(k);
     frames.push(f);
   }
-  // Only animate while on screen.
-  if ('IntersectionObserver' in window) {
-    new IntersectionObserver(function (es) { visible = es[0].isIntersecting; run(); }).observe(box);
-  }
 
-  var x0 = null, a0 = 0;
+  var x0 = null, i0 = 0;
   box.addEventListener('pointerdown', function (e) {
     if (loaded < N) return;
-    auto = false;
-    x0 = e.clientX; a0 = a;
+    x0 = e.clientX; i0 = i;
     box.classList.add('dragging', 'touched');
   });
   window.addEventListener('pointermove', function (e) {
     if (x0 === null) return;
     var pxPerFrame = Math.max(4, box.clientWidth / 90);   // ~ one turn per box width and a bit
     // + : raising az turns the ship's near flank to the right, so the surface follows the finger
-    a = a0 + (e.clientX - x0) / pxPerFrame;
-    requestAnimationFrame(draw);
+    show(i0 + Math.round((e.clientX - x0) / pxPerFrame));
   });
   ['pointerup', 'pointercancel'].forEach(function (t) {
     window.addEventListener(t, function () { x0 = null; box.classList.remove('dragging'); });
