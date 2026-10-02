@@ -68,6 +68,25 @@
   .partners img.tall { height:60px; }
   .partners img.drop { margin-top:28px; } /* centre on TU Delft wordmark, which sits below its flame */
 
+  .watch { padding-top:0; }
+  .watch .bars { list-style:none; margin-top:24px; }
+  .watch li { position:relative; display:grid; grid-template-columns:minmax(150px,220px) 1fr; align-items:center; gap:16px; padding:10px 0; outline:none; }
+  .watch .name { font-size:14px; line-height:1.3; }
+  .watch .name small { display:block; color:var(--muted); font-size:12px; }
+  .watch .track { display:flex; align-items:center; gap:10px; min-width:0; }
+  .watch .bar { flex:none; height:14px; min-width:3px; border-radius:0 4px 4px 0; background:#4a4a55; }
+  .watch .orb .bar { background:var(--fg); }
+  .watch .val { font-size:14px; font-weight:600; white-space:nowrap; }
+  .watch .axis { display:grid; grid-template-columns:minmax(150px,220px) 1fr; gap:16px; margin-top:4px; }
+  .watch .ticks { position:relative; height:18px; border-top:1px solid var(--line); color:var(--muted); font-size:11px; }
+  .watch .ticks span { position:absolute; top:4px; transform:translateX(-50%); }
+  .watch .ticks span:first-child { transform:none; }
+  .watch .tip { position:absolute; left:min(240px,40%); top:100%; z-index:2; background:#1b1b21; border:1px solid var(--line); border-radius:6px; padding:8px 10px; font-size:12px; color:var(--fg); white-space:nowrap; opacity:0; pointer-events:none; transition:opacity .15s; }
+  .watch li:hover .tip, .watch li:focus .tip { opacity:1; }
+  .watch li:hover .bar, .watch li:focus .bar { filter:brightness(1.25); }
+  .watch .notes { margin-top:16px; color:var(--muted); font-size:12px; }
+  .watch .notes a { color:var(--muted); }
+
   .coverage { padding-top:0; }
   .coverage .head { display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px 32px; margin-bottom:20px; }
   .coverage .head p { max-width:560px; }
@@ -97,6 +116,8 @@
     .stats b { font-size:19px; }
     .logo img { height:12px; }
     #map { height:360px; }
+    .watch li, .watch .axis { grid-template-columns:1fr; gap:6px; }
+    .watch .axis > span:first-child { display:none; }
   }
 </style>
 <script data-goatcounter="https://orbdynamics.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -143,6 +164,33 @@
           <li><b>Cargo transport</b><span class="muted">Autonomous middle-mile freight</span></li>
         </ul>
       </div>
+    </div>
+  </section>
+
+  <section class="watch">
+    <div class="wrap">
+      <h2>Hours on watch, per flight</h2>
+      <p class="muted">Drones and helicopters have to land and refuel. An airship stays up.</p>
+      <!-- One linear scale for every bar: 24 h = 88% of the track (room for the value label).
+           width = hours / 24 * 88. -->
+      <ul class="bars" aria-label="Time aloft per flight">
+        <li tabindex="0"><span class="name">Multirotor drone<small>DJI Matrice 350 RTK</small></span>
+          <span class="track"><span class="bar" style="width:2.14%"></span><span class="val">35 min</span></span>
+          <span class="tip">With gimbal camera fitted (55 min with no payload)<sup>1</sup></span></li>
+        <li tabindex="0"><span class="name">Fixed-wing drone<small>senseFly eBee X</small></span>
+          <span class="track"><span class="bar" style="width:5.5%"></span><span class="val">1.5 h</span></span>
+          <span class="tip">With endurance extension<sup>2</sup></span></li>
+        <li tabindex="0"><span class="name">Light helicopter<small>Airbus H125</small></span>
+          <span class="track"><span class="bar" style="width:16.32%"></span><span class="val">4.5 h</span></span>
+          <span class="tip">4 h 27 min at max. take-off weight, standard fuel<sup>3</sup></span></li>
+        <li tabindex="0" class="orb"><span class="name">ORB airship<small>design target</small></span>
+          <span class="track"><span class="bar" style="width:88%"></span><span class="val">24 h+</span></span>
+          <span class="tip">Design target for one flight</span></li>
+      </ul>
+      <div class="axis" aria-hidden="true"><span></span>
+        <div class="ticks"><span style="left:0">0</span><span style="left:22%">6 h</span><span style="left:44%">12 h</span><span style="left:66%">18 h</span><span style="left:88%">24 h</span></div>
+      </div>
+      <p class="notes">Manufacturer figures. <sup>1</sup><a href="https://www.dji.com/support/product/matrice-350-rtk" target="_blank" rel="noopener">DJI</a> <sup>2</sup><a href="https://wingtra.com/best-drones-for-photogrammetry-wingtraone-comparison/ebee-x-vs-wingtra-drone/" target="_blank" rel="noopener">eBee X</a> <sup>3</sup><a href="https://www.airbus.com/en/products-services/helicopters/civil-helicopters/h125/h125-technical-information" target="_blank" rel="noopener">Airbus</a></p>
     </div>
   </section>
 
