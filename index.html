@@ -53,6 +53,9 @@
   section { padding:80px 0; }
   .split { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; }
   .split img { width:100%; height:auto; display:block; }
+  .sim { max-width:1280px; margin:0 auto 48px; padding:0 24px; }
+  .sim video { display:block; width:100%; height:auto; aspect-ratio:16/9; background:#101014; border:1px solid var(--line); }
+  .sim figcaption { color:var(--muted); font-size:13px; margin-top:10px; }
   h2 { font-size:28px; font-weight:600; letter-spacing:-.01em; margin-bottom:16px; }
   .muted { color:var(--muted); }
   ul.markets { list-style:none; margin-top:20px; }
@@ -153,8 +156,15 @@
   </div>
 
   <section>
-    <div class="wrap split">
-      <img src="img/airship-front.jpg" alt="ORB Dynamics airship render, three-quarter view" width="1280" height="720" loading="lazy">
+    <!-- Full-HD simulation film. preload="none" + play-on-view (script below) so the 9 MB file loads only
+         for visitors who scroll here; the poster is a frame from the detection sequence. -->
+    <figure class="sim">
+      <video id="sim-video" src="img/orb-sim.mp4" poster="img/orb-sim-poster.jpg" width="1920" height="1080"
+             muted loop playsinline controls preload="none"
+             aria-label="Simulation: six ORB airships patrol Ourense, Spain, and detect two wildfires"></video>
+      <figcaption>Illustrative simulation: six airships patrolling Ourense, Spain, on real terrain. Detection probabilities are model approximations, not measured performance.</figcaption>
+    </figure>
+    <div class="wrap">
       <div>
         <h2>One platform, multiple markets</h2>
         <p class="muted">Persistent autonomous watch wherever coverage is thin.</p>
@@ -276,6 +286,23 @@
   ['pointerup', 'pointercancel'].forEach(function (t) {
     window.addEventListener(t, function () { x0 = null; box.classList.remove('dragging'); });
   });
+})();
+
+// Simulation film: start (muted) when half of it is on screen, pause when it leaves. Visitors who ask
+// for reduced motion get the poster and the play control only.
+(function () {
+  var v = document.getElementById('sim-video');
+  if (!v || !('IntersectionObserver' in window)) return;
+  if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var userPaused = false;
+  v.addEventListener('pause', function () { if (!v.dataset.auto) userPaused = true; delete v.dataset.auto; });
+  v.addEventListener('play', function () { userPaused = false; });
+  new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (e.isIntersecting && !userPaused) { v.play().catch(function () {}); }
+      else if (!e.isIntersecting && !v.paused) { v.dataset.auto = '1'; v.pause(); }
+    });
+  }, { threshold: 0.5 }).observe(v);
 })();
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" integrity="sha512-h9FcoyWjHcOcmEVkxOfTLnmZFWIH0iZhZT1H2TbOq55xssQGEJHEaIm+PgoUaZbRvQTNTluNOEfb1ZRy6D3BOw==" crossorigin="anonymous">
