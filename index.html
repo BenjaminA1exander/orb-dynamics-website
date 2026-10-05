@@ -79,7 +79,9 @@
   .partners img.tall { height:60px; }
   .partners img.drop { margin-top:28px; } /* centre on TU Delft wordmark, which sits below its flame */
 
-  .watch { padding-top:0; }
+  .watch { padding-top:72px; }
+  .markets-sec { padding-top:0; }
+  .sim { margin-bottom:0; }
   .watch .bars { list-style:none; margin-top:24px; }
   .watch li { position:relative; display:grid; grid-template-columns:minmax(150px,220px) 1fr; align-items:center; gap:16px; padding:10px 0; outline:none; }
   .watch .name { font-size:14px; line-height:1.3; }
@@ -136,7 +138,7 @@
   <div class="hero">
     <div class="wrap">
       <h1>Hydrogen airships for <br class="lg">persistent aerial watch</h1>
-      <p>Autonomous, long-endurance airships that stay on station for a day or more, with detail on the ground.</p>
+      <p>Autonomous, long-endurance airships that stay on station for a day or more, with zero-carbon operation.</p>
     </div>
     <div class="spin" id="spin">
       <img src="img/spin/az080.jpg" alt="ORB Dynamics airship render. Drag to rotate." width="1280" height="720" draggable="false">
@@ -148,37 +150,15 @@
     <div class="stats">
       <div><b>24 hrs+</b><span>Endurance</span></div>
       <div><b>1,000–2,000 km</b><span>Range</span></div>
-      <div><b>Zero carbon</b><span>Emissions</span></div>
+      <div><b>Zero carbon</b><span>In operation</span></div>
       <div><b>Hydrogen</b><span>Safe by design</span></div>
     </div>
   </div>
 
-  <section>
-    <!-- Full-HD simulation film. preload="none" + play-on-view (script below) so the 9 MB file loads only
-         for visitors who scroll here; the poster is a frame from the detection sequence. -->
-    <figure class="sim">
-      <video id="sim-video" src="img/orb-sim.mp4" poster="img/orb-sim-poster.jpg" width="1920" height="1080"
-             muted loop playsinline controls preload="none"
-             aria-label="Simulation: six ORB airships patrol Ourense, Spain, and detect two wildfires"></video>
-      <figcaption>Illustrative simulation: six airships patrolling Ourense, Spain, on real terrain. Detection probabilities are model approximations, not measured performance.</figcaption>
-    </figure>
-    <div class="wrap">
-      <div>
-        <h2>One platform, multiple markets</h2>
-        <p class="muted">Persistent autonomous watch wherever coverage is thin.</p>
-        <ul class="markets">
-          <li><b>Wildfire detection</b><span class="muted">Early alerts for fire crews</span></li>
-          <li><b>Infrastructure &amp; government</b><span class="muted">Powerlines, pipelines, rail and maritime patrol</span></li>
-          <li><b>Cargo transport</b><span class="muted">Autonomous middle-mile freight</span></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
   <section class="watch">
     <div class="wrap">
       <h2>Hours on watch, per flight</h2>
-      <p class="muted">Drones and helicopters have to land and refuel. An airship stays up.</p>
+      <p class="muted">Drones and helicopters have to land and refuel, and helicopters burn kerosene. An airship stays up, powered by hydrogen fuel cells whose only exhaust is water.</p>
       <!-- One linear scale for every bar: 24 h = 88% of the track (room for the value label).
            width = hours / 24 * 88. -->
       <ul class="bars" aria-label="Time aloft per flight">
@@ -199,6 +179,31 @@
         <div class="ticks"><span style="left:0">0</span><span style="left:22%">6 h</span><span style="left:44%">12 h</span><span style="left:66%">18 h</span><span style="left:88%">24 h</span></div>
       </div>
       <p class="notes">Manufacturer figures. <sup>1</sup><a href="https://www.dji.com/support/product/matrice-350-rtk" target="_blank" rel="noopener">DJI</a> <sup>2</sup><a href="https://quantum-systems.com/vector-ai/" target="_blank" rel="noopener">Quantum Systems</a> <sup>3</sup><a href="https://www.airbus.com/en/products-services/helicopters/civil-helicopters/h125/h125-technical-information" target="_blank" rel="noopener">Airbus</a></p>
+    </div>
+  </section>
+
+  <section>
+    <!-- Full-HD simulation film. preload="none" + play-on-view (script below) so the 9 MB file loads only
+         for visitors who scroll here; the poster is a frame from the detection sequence. -->
+    <figure class="sim">
+      <video id="sim-video" src="img/orb-sim.mp4" poster="img/orb-sim-poster.jpg" width="1920" height="1080"
+             muted loop playsinline controls preload="none"
+             aria-label="Simulation: six ORB airships patrol Ourense, Spain, and detect two wildfires"></video>
+      <figcaption>Illustrative simulation: six airships patrolling Ourense, Spain, on real terrain. Detection probabilities are model approximations, not measured performance.</figcaption>
+    </figure>
+  </section>
+
+  <section class="markets-sec">
+    <div class="wrap">
+      <div>
+        <h2>One platform, multiple markets</h2>
+        <p class="muted">Persistent, zero-carbon autonomous watch wherever coverage is thin.</p>
+        <ul class="markets">
+          <li><b>Wildfire detection</b><span class="muted">Early alerts for fire crews</span></li>
+          <li><b>Infrastructure &amp; government</b><span class="muted">Powerlines, pipelines, rail and maritime patrol</span></li>
+          <li><b>Cargo transport</b><span class="muted">Autonomous middle-mile freight</span></li>
+        </ul>
+      </div>
     </div>
   </section>
 
