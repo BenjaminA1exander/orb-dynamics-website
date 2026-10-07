@@ -3,26 +3,68 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ORB Dynamics | Hydrogen airships for persistent aerial watch</title>
-<meta name="description" content="Autonomous hydrogen airships for persistent aerial watch: wildfire detection and infrastructure inspection.">
+<title>ORB Dynamics | Hydrogen airships for wildfire detection</title>
+<meta name="description" content="ORB Dynamics builds autonomous hydrogen airships that stay aloft for 24 hours or more, for persistent wildfire detection and infrastructure patrol. Incubated at YES!Delft.">
 <link rel="canonical" href="https://orbdynamics.eu/">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="/img/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable summary">
 <meta name="theme-color" content="#101014">
+<!-- Link previews (LinkedIn, Slack, WhatsApp, X): the side-view render. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ORB Dynamics">
+<meta property="og:url" content="https://orbdynamics.eu/">
+<meta property="og:title" content="ORB Dynamics | Hydrogen airships for wildfire detection">
+<meta property="og:description" content="Autonomous hydrogen airships that stay aloft for 24 hours or more, for persistent wildfire detection and infrastructure patrol.">
+<meta property="og:image" content="https://orbdynamics.eu/img/spin/az080.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="720">
+<meta property="og:image:alt" content="ORB Dynamics hydrogen airship, side view">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Structured data: one graph. Every fact here also appears in the visible page. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "ORB Dynamics",
-  "url": "https://orbdynamics.eu/",
-  "logo": "https://orbdynamics.eu/img/orb-logo-dark.png",
-  "email": "contact@orbdynamics.eu",
-  "description": "Autonomous hydrogen airships for persistent aerial watch: wildfire detection and infrastructure inspection.",
-  "sameAs": ["https://www.linkedin.com/company/orbdynamics/"],
-  "founder": [
-    { "@type": "Person", "name": "Ben O'Regan", "sameAs": "https://www.linkedin.com/in/benjamin-o-regan-08031924b/" },
-    { "@type": "Person", "name": "George Beacom", "sameAs": "https://www.linkedin.com/in/george-beacom/" }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://orbdynamics.eu/#org",
+      "name": "ORB Dynamics",
+      "alternateName": "ORB",
+      "url": "https://orbdynamics.eu/",
+      "logo": { "@type": "ImageObject", "url": "https://orbdynamics.eu/img/icon-512.png", "width": 512, "height": 512 },
+      "image": "https://orbdynamics.eu/img/spin/az080.jpg",
+      "email": "contact@orbdynamics.eu",
+      "description": "ORB Dynamics develops autonomous, long-endurance hydrogen airships for persistent aerial watch: wildfire detection, infrastructure and government patrol (powerlines, pipelines, rail, maritime) and autonomous middle-mile cargo. Design target: 24 hours or more on station, 1,000-2,000 km range, powered by hydrogen fuel cells whose only exhaust is water.",
+      "knowsAbout": ["Airships", "Hydrogen fuel cells", "Wildfire detection", "Infrastructure inspection", "Autonomous aircraft", "Persistent aerial surveillance"],
+      "sameAs": ["https://www.linkedin.com/company/orbdynamics/"],
+      "founder": [
+        { "@type": "Person", "name": "Ben O'Regan", "sameAs": "https://www.linkedin.com/in/benjamin-o-regan-08031924b/" },
+        { "@type": "Person", "name": "George Beacom", "sameAs": "https://www.linkedin.com/in/george-beacom/" }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://orbdynamics.eu/#site",
+      "url": "https://orbdynamics.eu/",
+      "name": "ORB Dynamics",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://orbdynamics.eu/#org" }
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Six ORB airships patrol Ourense, Spain, and detect two wildfires",
+      "description": "Illustrative simulation: six autonomous hydrogen airships patrolling Ourense, Spain, on real terrain, detecting two wildfires. Detection probabilities are model approximations, not measured performance.",
+      "thumbnailUrl": "https://orbdynamics.eu/img/orb-sim-poster.jpg",
+      "contentUrl": "https://orbdynamics.eu/img/orb-sim.mp4",
+      "uploadDate": "2026-10-02T13:03:04+02:00",
+      "duration": "PT48S",
+      "width": 1920,
+      "height": 1080,
+      "publisher": { "@id": "https://orbdynamics.eu/#org" }
+    }
   ]
 }
 </script>
@@ -141,7 +183,7 @@
       <p>Autonomous, long-endurance airships that stay on station for a day or more, with zero-carbon operation.</p>
     </div>
     <div class="spin" id="spin">
-      <img src="img/spin/az080.jpg" alt="ORB Dynamics airship render. Drag to rotate." width="1280" height="720" draggable="false">
+      <img src="img/spin/az080.jpg" alt="ORB Dynamics hydrogen airship, 3D render. Drag to rotate." width="1280" height="720" draggable="false" fetchpriority="high">
       <span class="spin-hint" aria-hidden="true">Drag to rotate</span>
     </div>
   </div>
@@ -247,9 +289,12 @@
   for (var k = 0; k < N; k++) {
     var f = new Image();
     f.onload = function () { if (++loaded === N) box.classList.add('ready'); };
-    f.src = src(k);
     frames.push(f);
   }
+  // Fetch the other 71 frames only after the page has loaded, so they don't compete with the
+  // hero frame and the first paint (Core Web Vitals). Dragging waits for them anyway.
+  function fetchAll() { frames.forEach(function (f, k) { f.src = src(k); }); }
+  if (document.readyState === 'complete') fetchAll(); else window.addEventListener('load', fetchAll);
 
   var x0 = null, i0 = 0;
   box.addEventListener('pointerdown', function (e) {

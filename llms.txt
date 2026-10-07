@@ -1,0 +1,33 @@
+# ORB Dynamics
+
+> ORB Dynamics develops autonomous, long-endurance hydrogen airships for persistent aerial watch. The design target is 24 hours or more on station per flight and a range of 1,000-2,000 km, powered by hydrogen fuel cells whose only exhaust is water. Incubated at YES!Delft, with research from TU Delft.
+
+## What the airship does
+
+- Wildfire detection: early alerts for fire crews, from an airship that stays over the area instead of landing to refuel.
+- Infrastructure and government: patrol of powerlines, pipelines, rail and maritime areas.
+- Cargo transport: autonomous middle-mile freight.
+
+## Why an airship
+
+Drones and helicopters must land to refuel, and helicopters burn kerosene. Manufacturer figures for time aloft per flight:
+
+- Multirotor drone (DJI Matrice 350 RTK): about 35 minutes with a gimbal camera fitted.
+- Fixed-wing drone (Quantum Systems Vector AI): about 3 hours.
+- Light helicopter (Airbus H125): about 4.5 hours.
+- ORB airship: 24 hours or more (design target, not yet flown).
+
+The ORB airship is in development. Endurance and range are design targets, not measured performance.
+
+## Simulation
+
+An illustrative simulation shows six ORB airships patrolling Ourense, Spain, on real terrain and detecting two wildfires. Detection probabilities in it are model approximations, not measured performance. Video: https://orbdynamics.eu/img/orb-sim.mp4
+
+## Company
+
+- Founders: Ben O'Regan (https://www.linkedin.com/in/benjamin-o-regan-08031924b/) and George Beacom (https://www.linkedin.com/in/george-beacom/)
+- Incubated at YES!Delft; research from TU Delft
+- Currently seeking expertise, support and funding
+- Contact: contact@orbdynamics.eu
+- LinkedIn: https://www.linkedin.com/company/orbdynamics/
+- Website: https://orbdynamics.eu/
