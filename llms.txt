@@ -34,10 +34,18 @@ An illustrative simulation shows six ORB airships patrolling Ourense, Spain, on 
 
 ## Languages
 
+- Deutsch: https://orbdynamics.eu/de/
 - English: https://orbdynamics.eu/
 - Español: https://orbdynamics.eu/es/
 - Français: https://orbdynamics.eu/fr/
+- Hrvatski: https://orbdynamics.eu/hr/
 - Italiano: https://orbdynamics.eu/it/
+- Latviešu: https://orbdynamics.eu/lv/
+- Lietuvių: https://orbdynamics.eu/lt/
 - Nederlands: https://orbdynamics.eu/nl/
+- Polski: https://orbdynamics.eu/pl/
 - Português: https://orbdynamics.eu/pt/
+- Română: https://orbdynamics.eu/ro/
 - Ελληνικά: https://orbdynamics.eu/el/
+- Български: https://orbdynamics.eu/bg/
+- Українська: https://orbdynamics.eu/uk/

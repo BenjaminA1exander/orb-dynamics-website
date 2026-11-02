@@ -8,13 +8,21 @@
 <meta name="description" content="ORB Dynamics sviluppa dirigibili autonomi a idrogeno che restano in volo per 24 ore o più, per il rilevamento continuo degli incendi boschivi e la sorveglianza delle infrastrutture. Incubata presso YES!Delft.">
 <link rel="canonical" href="https://orbdynamics.eu/it/">
 <!-- i18n:alternates -->
+<link rel="alternate" hreflang="de" href="https://orbdynamics.eu/de/">
 <link rel="alternate" hreflang="en" href="https://orbdynamics.eu/">
 <link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/">
 <link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/">
+<link rel="alternate" hreflang="hr" href="https://orbdynamics.eu/hr/">
 <link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/">
+<link rel="alternate" hreflang="lv" href="https://orbdynamics.eu/lv/">
+<link rel="alternate" hreflang="lt" href="https://orbdynamics.eu/lt/">
 <link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/">
+<link rel="alternate" hreflang="pl" href="https://orbdynamics.eu/pl/">
 <link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/">
+<link rel="alternate" hreflang="ro" href="https://orbdynamics.eu/ro/">
 <link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/">
+<link rel="alternate" hreflang="bg" href="https://orbdynamics.eu/bg/">
+<link rel="alternate" hreflang="uk" href="https://orbdynamics.eu/uk/">
 <link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/">
 <!-- /i18n:alternates -->
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -34,12 +42,20 @@
 <meta property="og:image:alt" content="Dirigibile a idrogeno ORB Dynamics, vista laterale">
 <meta property="og:locale" content="it_IT">
 <!-- i18n:og -->
+<meta property="og:locale:alternate" content="de_DE">
 <meta property="og:locale:alternate" content="en_GB">
 <meta property="og:locale:alternate" content="es_ES">
 <meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="hr_HR">
+<meta property="og:locale:alternate" content="lv_LV">
+<meta property="og:locale:alternate" content="lt_LT">
 <meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pl_PL">
 <meta property="og:locale:alternate" content="pt_PT">
+<meta property="og:locale:alternate" content="ro_RO">
 <meta property="og:locale:alternate" content="el_GR">
+<meta property="og:locale:alternate" content="bg_BG">
+<meta property="og:locale:alternate" content="uk_UA">
 <!-- /i18n:og -->
 <meta name="twitter:card" content="summary_large_image">
 <!-- Structured data: one graph. Every fact here also appears in the visible page. -->
@@ -69,7 +85,7 @@
       "@id": "https://orbdynamics.eu/#site",
       "url": "https://orbdynamics.eu/",
       "name": "ORB Dynamics",
-      "inLanguage": ["en", "es", "fr", "it", "nl", "pt", "el"],
+      "inLanguage": ["de", "en", "es", "fr", "hr", "it", "lv", "lt", "nl", "pl", "pt", "ro", "el", "bg", "uk"],
       "publisher": { "@id": "https://orbdynamics.eu/#org" }
     },
     {
@@ -174,7 +190,8 @@
   footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
 
   @media (max-width:760px) {
-    .stats { grid-template-columns:repeat(2,1fr); }
+    .stats { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .stats b, .stats span { overflow-wrap:break-word; }
     .stats div:nth-child(3) { border-left:0; }
     .stats div:nth-child(n+3) { border-top:1px solid var(--line); }
     .split { grid-template-columns:1fr; gap:24px; }
@@ -189,6 +206,8 @@
   }
   @media (max-width:480px) {
     header .wrap { flex-wrap:wrap; gap:12px; }
+    .stats div { padding:24px 8px; }
+    .stats span { letter-spacing:.05em; }
     .lang ul { right:auto; left:0; }
     .watch .track, .watch .ticks { width:82%; } /* same scale for bars and axis; room for long value labels */
   }
@@ -205,13 +224,21 @@
       <details class="lang">
         <summary aria-label="Lingua" title="Lingua">IT</summary>
         <ul>
+          <li><a href="/de/" lang="de" hreflang="de">Deutsch</a></li>
           <li><a href="/" lang="en" hreflang="en">English</a></li>
           <li><a href="/es/" lang="es" hreflang="es">Español</a></li>
           <li><a href="/fr/" lang="fr" hreflang="fr">Français</a></li>
+          <li><a href="/hr/" lang="hr" hreflang="hr">Hrvatski</a></li>
           <li><a href="/it/" lang="it" hreflang="it" aria-current="true">Italiano</a></li>
+          <li><a href="/lv/" lang="lv" hreflang="lv">Latviešu</a></li>
+          <li><a href="/lt/" lang="lt" hreflang="lt">Lietuvių</a></li>
           <li><a href="/nl/" lang="nl" hreflang="nl">Nederlands</a></li>
+          <li><a href="/pl/" lang="pl" hreflang="pl">Polski</a></li>
           <li><a href="/pt/" lang="pt" hreflang="pt">Português</a></li>
+          <li><a href="/ro/" lang="ro" hreflang="ro">Română</a></li>
           <li><a href="/el/" lang="el" hreflang="el">Ελληνικά</a></li>
+          <li><a href="/bg/" lang="bg" hreflang="bg">Български</a></li>
+          <li><a href="/uk/" lang="uk" hreflang="uk">Українська</a></li>
         </ul>
       </details>
 <!-- /i18n:switcher -->

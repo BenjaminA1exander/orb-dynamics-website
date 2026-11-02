@@ -4,15 +4,51 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>https://orbdynamics.eu/</loc>
+    <loc>https://orbdynamics.eu/de/</loc>
     <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://orbdynamics.eu/de/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://orbdynamics.eu/hr/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://orbdynamics.eu/lv/"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://orbdynamics.eu/lt/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://orbdynamics.eu/pl/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://orbdynamics.eu/ro/"/>
     <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://orbdynamics.eu/bg/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://orbdynamics.eu/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
+    <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://orbdynamics.eu/img/orb-sim-poster.jpg</video:thumbnail_loc>
+      <video:title>Sechs ORB-Luftschiffe überwachen Ourense (Spanien) und entdecken zwei Waldbrände</video:title>
+      <video:description>Beispielhafte Simulation: Sechs autonome Wasserstoff-Luftschiffe überwachen Ourense (Spanien) über realem Gelände und entdecken zwei Waldbrände.</video:description>
+      <video:content_loc>https://orbdynamics.eu/img/orb-sim.mp4</video:content_loc>
+      <video:duration>48</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://orbdynamics.eu/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://orbdynamics.eu/de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://orbdynamics.eu/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://orbdynamics.eu/lv/"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://orbdynamics.eu/lt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://orbdynamics.eu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://orbdynamics.eu/ro/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://orbdynamics.eu/bg/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://orbdynamics.eu/uk/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
     <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
     <video:video>
@@ -26,13 +62,21 @@
   <url>
     <loc>https://orbdynamics.eu/es/</loc>
     <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://orbdynamics.eu/de/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://orbdynamics.eu/hr/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://orbdynamics.eu/lv/"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://orbdynamics.eu/lt/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://orbdynamics.eu/pl/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://orbdynamics.eu/ro/"/>
     <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://orbdynamics.eu/bg/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://orbdynamics.eu/uk/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
     <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
     <video:video>
@@ -46,13 +90,21 @@
   <url>
     <loc>https://orbdynamics.eu/fr/</loc>
     <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://orbdynamics.eu/de/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://orbdynamics.eu/hr/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://orbdynamics.eu/lv/"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://orbdynamics.eu/lt/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://orbdynamics.eu/pl/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://orbdynamics.eu/ro/"/>
     <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://orbdynamics.eu/bg/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://orbdynamics.eu/uk/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
     <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
     <video:video>
@@ -64,15 +116,51 @@
     </video:video>
   </url>
   <url>
-    <loc>https://orbdynamics.eu/it/</loc>
+    <loc>https://orbdynamics.eu/hr/</loc>
     <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://orbdynamics.eu/de/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://orbdynamics.eu/hr/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://orbdynamics.eu/lv/"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://orbdynamics.eu/lt/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://orbdynamics.eu/pl/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://orbdynamics.eu/ro/"/>
     <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://orbdynamics.eu/bg/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://orbdynamics.eu/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
+    <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://orbdynamics.eu/img/orb-sim-poster.jpg</video:thumbnail_loc>
+      <video:title>Šest zračnih brodova ORB patrolira nad Ourenseom (Španjolska) i otkriva dva šumska požara</video:title>
+      <video:description>Ilustrativna simulacija: šest autonomnih zračnih brodova na vodik patrolira nad stvarnim terenom Ourensea (Španjolska) i otkriva dva šumska požara.</video:description>
+      <video:content_loc>https://orbdynamics.eu/img/orb-sim.mp4</video:content_loc>
+      <video:duration>48</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://orbdynamics.eu/it/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://orbdynamics.eu/de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://orbdynamics.eu/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://orbdynamics.eu/lv/"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://orbdynamics.eu/lt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://orbdynamics.eu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://orbdynamics.eu/ro/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://orbdynamics.eu/bg/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://orbdynamics.eu/uk/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
     <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
     <video:video>
@@ -84,15 +172,79 @@
     </video:video>
   </url>
   <url>
-    <loc>https://orbdynamics.eu/nl/</loc>
+    <loc>https://orbdynamics.eu/lv/</loc>
     <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://orbdynamics.eu/de/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://orbdynamics.eu/hr/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://orbdynamics.eu/lv/"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://orbdynamics.eu/lt/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://orbdynamics.eu/pl/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://orbdynamics.eu/ro/"/>
     <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://orbdynamics.eu/bg/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://orbdynamics.eu/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
+    <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://orbdynamics.eu/img/orb-sim-poster.jpg</video:thumbnail_loc>
+      <video:title>Seši ORB dirižabļi patrulē Ourense reģionā (Spānija) un atklāj divus meža ugunsgrēkus</video:title>
+      <video:description>Ilustratīva simulācija: seši autonomi ūdeņraža dirižabļi patrulē virs reālā Ourense reģiona (Spānija) reljefa un atklāj divus meža ugunsgrēkus.</video:description>
+      <video:content_loc>https://orbdynamics.eu/img/orb-sim.mp4</video:content_loc>
+      <video:duration>48</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://orbdynamics.eu/lt/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://orbdynamics.eu/de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://orbdynamics.eu/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://orbdynamics.eu/lv/"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://orbdynamics.eu/lt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://orbdynamics.eu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://orbdynamics.eu/ro/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://orbdynamics.eu/bg/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://orbdynamics.eu/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
+    <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://orbdynamics.eu/img/orb-sim-poster.jpg</video:thumbnail_loc>
+      <video:title>Šeši ORB dirižabliai patruliuoja Ourense regione (Ispanija) ir aptinka du miško gaisrus</video:title>
+      <video:description>Iliustracinė simuliacija: šeši autonominiai vandenilio dirižabliai patruliuoja virš tikro Ourense regiono (Ispanija) reljefo ir aptinka du miško gaisrus.</video:description>
+      <video:content_loc>https://orbdynamics.eu/img/orb-sim.mp4</video:content_loc>
+      <video:duration>48</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://orbdynamics.eu/nl/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://orbdynamics.eu/de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://orbdynamics.eu/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://orbdynamics.eu/lv/"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://orbdynamics.eu/lt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://orbdynamics.eu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://orbdynamics.eu/ro/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://orbdynamics.eu/bg/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://orbdynamics.eu/uk/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
     <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
     <video:video>
@@ -104,15 +256,51 @@
     </video:video>
   </url>
   <url>
-    <loc>https://orbdynamics.eu/pt/</loc>
+    <loc>https://orbdynamics.eu/pl/</loc>
     <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://orbdynamics.eu/de/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://orbdynamics.eu/hr/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://orbdynamics.eu/lv/"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://orbdynamics.eu/lt/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://orbdynamics.eu/pl/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://orbdynamics.eu/ro/"/>
     <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://orbdynamics.eu/bg/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://orbdynamics.eu/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
+    <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://orbdynamics.eu/img/orb-sim-poster.jpg</video:thumbnail_loc>
+      <video:title>Sześć sterowców ORB patroluje okolice Ourense (Hiszpania) i wykrywa dwa pożary lasów</video:title>
+      <video:description>Symulacja poglądowa: sześć autonomicznych sterowców wodorowych patroluje okolice Ourense (Hiszpania) nad rzeczywistym terenem i wykrywa dwa pożary lasów.</video:description>
+      <video:content_loc>https://orbdynamics.eu/img/orb-sim.mp4</video:content_loc>
+      <video:duration>48</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://orbdynamics.eu/pt/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://orbdynamics.eu/de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://orbdynamics.eu/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://orbdynamics.eu/lv/"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://orbdynamics.eu/lt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://orbdynamics.eu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://orbdynamics.eu/ro/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://orbdynamics.eu/bg/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://orbdynamics.eu/uk/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
     <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
     <video:video>
@@ -124,21 +312,113 @@
     </video:video>
   </url>
   <url>
-    <loc>https://orbdynamics.eu/el/</loc>
+    <loc>https://orbdynamics.eu/ro/</loc>
     <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://orbdynamics.eu/de/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://orbdynamics.eu/hr/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://orbdynamics.eu/lv/"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://orbdynamics.eu/lt/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://orbdynamics.eu/pl/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://orbdynamics.eu/ro/"/>
     <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://orbdynamics.eu/bg/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://orbdynamics.eu/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
+    <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://orbdynamics.eu/img/orb-sim-poster.jpg</video:thumbnail_loc>
+      <video:title>Șase dirijabile ORB patrulează în Ourense (Spania) și detectează două incendii de pădure</video:title>
+      <video:description>Simulare ilustrativă: șase dirijabile autonome cu hidrogen patrulează în Ourense (Spania), pe teren real, și detectează două incendii de pădure.</video:description>
+      <video:content_loc>https://orbdynamics.eu/img/orb-sim.mp4</video:content_loc>
+      <video:duration>48</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://orbdynamics.eu/el/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://orbdynamics.eu/de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://orbdynamics.eu/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://orbdynamics.eu/lv/"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://orbdynamics.eu/lt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://orbdynamics.eu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://orbdynamics.eu/ro/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://orbdynamics.eu/bg/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://orbdynamics.eu/uk/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
     <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
     <video:video>
       <video:thumbnail_loc>https://orbdynamics.eu/img/orb-sim-poster.jpg</video:thumbnail_loc>
       <video:title>Έξι αερόπλοια ORB περιπολούν στο Ourense της Ισπανίας και εντοπίζουν δύο δασικές πυρκαγιές</video:title>
       <video:description>Ενδεικτική προσομοίωση: έξι αυτόνομα αερόπλοια υδρογόνου περιπολούν στο Ourense της Ισπανίας, σε πραγματικό ανάγλυφο, και εντοπίζουν δύο δασικές πυρκαγιές.</video:description>
+      <video:content_loc>https://orbdynamics.eu/img/orb-sim.mp4</video:content_loc>
+      <video:duration>48</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://orbdynamics.eu/bg/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://orbdynamics.eu/de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://orbdynamics.eu/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://orbdynamics.eu/lv/"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://orbdynamics.eu/lt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://orbdynamics.eu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://orbdynamics.eu/ro/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://orbdynamics.eu/bg/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://orbdynamics.eu/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
+    <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://orbdynamics.eu/img/orb-sim-poster.jpg</video:thumbnail_loc>
+      <video:title>Шест дирижабъла ORB патрулират над Оренсе (Испания) и откриват два горски пожара</video:title>
+      <video:description>Илюстративна симулация: шест автономни водородни дирижабъла патрулират над реалния терен на Оренсе (Испания) и откриват два горски пожара.</video:description>
+      <video:content_loc>https://orbdynamics.eu/img/orb-sim.mp4</video:content_loc>
+      <video:duration>48</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://orbdynamics.eu/uk/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://orbdynamics.eu/de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://orbdynamics.eu/hr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://orbdynamics.eu/lv/"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://orbdynamics.eu/lt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://orbdynamics.eu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://orbdynamics.eu/ro/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://orbdynamics.eu/bg/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://orbdynamics.eu/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
+    <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://orbdynamics.eu/img/orb-sim-poster.jpg</video:thumbnail_loc>
+      <video:title>Шість дирижаблів ORB патрулюють Оуренсе (Іспанія) і виявляють дві лісові пожежі</video:title>
+      <video:description>Ілюстративна симуляція: шість автономних водневих дирижаблів патрулюють Оуренсе (Іспанія) над реальною місцевістю і виявляють дві лісові пожежі.</video:description>
       <video:content_loc>https://orbdynamics.eu/img/orb-sim.mp4</video:content_loc>
       <video:duration>48</video:duration>
     </video:video>
