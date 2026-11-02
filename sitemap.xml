@@ -1,15 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://orbdynamics.eu/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
     <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
     <video:video>
       <video:thumbnail_loc>https://orbdynamics.eu/img/orb-sim-poster.jpg</video:thumbnail_loc>
       <video:title>Six ORB airships patrol Ourense, Spain, and detect two wildfires</video:title>
       <video:description>Illustrative simulation: six autonomous hydrogen airships patrolling Ourense, Spain, on real terrain, detecting two wildfires.</video:description>
+      <video:content_loc>https://orbdynamics.eu/img/orb-sim.mp4</video:content_loc>
+      <video:duration>48</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://orbdynamics.eu/es/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
+    <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://orbdynamics.eu/img/orb-sim-poster.jpg</video:thumbnail_loc>
+      <video:title>Seis dirigibles ORB patrullan Ourense (España) y detectan dos incendios forestales</video:title>
+      <video:description>Simulación ilustrativa: seis dirigibles autónomos de hidrógeno patrullan Ourense (España) sobre terreno real y detectan dos incendios forestales.</video:description>
+      <video:content_loc>https://orbdynamics.eu/img/orb-sim.mp4</video:content_loc>
+      <video:duration>48</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://orbdynamics.eu/fr/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
+    <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://orbdynamics.eu/img/orb-sim-poster.jpg</video:thumbnail_loc>
+      <video:title>Six dirigeables ORB patrouillent à Ourense (Espagne) et détectent deux feux de forêt</video:title>
+      <video:description>Simulation illustrative : six dirigeables autonomes à hydrogène patrouillent à Ourense (Espagne), sur un relief réel, et détectent deux feux de forêt.</video:description>
+      <video:content_loc>https://orbdynamics.eu/img/orb-sim.mp4</video:content_loc>
+      <video:duration>48</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://orbdynamics.eu/it/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
+    <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://orbdynamics.eu/img/orb-sim-poster.jpg</video:thumbnail_loc>
+      <video:title>Sei dirigibili ORB pattugliano Ourense (Spagna) e rilevano due incendi boschivi</video:title>
+      <video:description>Simulazione illustrativa: sei dirigibili autonomi a idrogeno pattugliano Ourense (Spagna) su terreno reale e rilevano due incendi boschivi.</video:description>
+      <video:content_loc>https://orbdynamics.eu/img/orb-sim.mp4</video:content_loc>
+      <video:duration>48</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://orbdynamics.eu/nl/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
+    <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://orbdynamics.eu/img/orb-sim-poster.jpg</video:thumbnail_loc>
+      <video:title>Zes ORB-luchtschepen patrouilleren boven Ourense (Spanje) en detecteren twee natuurbranden</video:title>
+      <video:description>Illustratieve simulatie: zes autonome luchtschepen op waterstof patrouilleren boven echt terrein in Ourense (Spanje) en detecteren twee natuurbranden.</video:description>
+      <video:content_loc>https://orbdynamics.eu/img/orb-sim.mp4</video:content_loc>
+      <video:duration>48</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://orbdynamics.eu/pt/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
+    <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://orbdynamics.eu/img/orb-sim-poster.jpg</video:thumbnail_loc>
+      <video:title>Seis dirigíveis ORB patrulham Ourense (Espanha) e detetam dois incêndios rurais</video:title>
+      <video:description>Simulação ilustrativa: seis dirigíveis autónomos a hidrogénio patrulham Ourense (Espanha) sobre terreno real e detetam dois incêndios rurais.</video:description>
+      <video:content_loc>https://orbdynamics.eu/img/orb-sim.mp4</video:content_loc>
+      <video:duration>48</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://orbdynamics.eu/el/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orbdynamics.eu/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://orbdynamics.eu/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://orbdynamics.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orbdynamics.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://orbdynamics.eu/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://orbdynamics.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://orbdynamics.eu/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orbdynamics.eu/"/>
+    <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://orbdynamics.eu/img/orb-sim-poster.jpg</video:thumbnail_loc>
+      <video:title>Έξι αερόπλοια ORB περιπολούν στο Ourense της Ισπανίας και εντοπίζουν δύο δασικές πυρκαγιές</video:title>
+      <video:description>Ενδεικτική προσομοίωση: έξι αυτόνομα αερόπλοια υδρογόνου περιπολούν στο Ourense της Ισπανίας, σε πραγματικό ανάγλυφο, και εντοπίζουν δύο δασικές πυρκαγιές.</video:description>
       <video:content_loc>https://orbdynamics.eu/img/orb-sim.mp4</video:content_loc>
       <video:duration>48</video:duration>
     </video:video>

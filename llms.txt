@@ -31,3 +31,13 @@ An illustrative simulation shows six ORB airships patrolling Ourense, Spain, on 
 - Contact: contact@orbdynamics.eu
 - LinkedIn: https://www.linkedin.com/company/orbdynamics/
 - Website: https://orbdynamics.eu/
+
+## Languages
+
+- English: https://orbdynamics.eu/
+- Español: https://orbdynamics.eu/es/
+- Français: https://orbdynamics.eu/fr/
+- Italiano: https://orbdynamics.eu/it/
+- Nederlands: https://orbdynamics.eu/nl/
+- Português: https://orbdynamics.eu/pt/
+- Ελληνικά: https://orbdynamics.eu/el/
