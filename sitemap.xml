@@ -361,8 +361,8 @@
     <image:image><image:loc>https://orbdynamics.eu/img/spin/az080.jpg</image:loc></image:image>
     <video:video>
       <video:thumbnail_loc>https://orbdynamics.eu/img/orb-sim-poster.jpg</video:thumbnail_loc>
-      <video:title>Έξι αερόπλοια ORB περιπολούν στο Ourense της Ισπανίας και εντοπίζουν δύο δασικές πυρκαγιές</video:title>
-      <video:description>Ενδεικτική προσομοίωση: έξι αυτόνομα αερόπλοια υδρογόνου περιπολούν στο Ourense της Ισπανίας, σε πραγματικό ανάγλυφο, και εντοπίζουν δύο δασικές πυρκαγιές.</video:description>
+      <video:title>Έξι ζέπελιν ORB περιπολούν στο Ourense της Ισπανίας και εντοπίζουν δύο δασικές πυρκαγιές</video:title>
+      <video:description>Ενδεικτική προσομοίωση: έξι αυτόνομα ζέπελιν υδρογόνου περιπολούν στο Ourense της Ισπανίας, σε πραγματικό ανάγλυφο, και εντοπίζουν δύο δασικές πυρκαγιές.</video:description>
       <video:content_loc>https://orbdynamics.eu/img/orb-sim.mp4</video:content_loc>
       <video:duration>48</video:duration>
     </video:video>
