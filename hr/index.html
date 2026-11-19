@@ -164,6 +164,12 @@
   .partners img.tall { height:60px; }
   .partners img.drop { margin-top:28px; } /* centre on TU Delft wordmark, which sits below its flame */
 
+  /* Rendered wildfire vista: full-bleed strip whose top and bottom dissolve into the page. */
+  .vista { margin-top:56px; }
+  .vista img { display:block; width:100%; height:auto; min-height:150px; object-fit:cover; object-position:62% 50%;
+    -webkit-mask-image:linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent);
+            mask-image:linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent); }
+  @media (max-width:760px) { .vista { margin-top:40px; } .vista img { min-height:110px; object-position:72% 50%; } }
   .watch { padding-top:72px; }
   .markets-sec { padding-top:0; }
   .sim { margin-bottom:0; }
@@ -269,6 +275,10 @@
       <div><b>Bez emisija ugljika</b><span>Tijekom rada</span></div>
       <div><b>Vodik</b><span>Sigurnost ugrađena u dizajn</span></div>
     </div>
+  </div>
+
+  <div class="vista" aria-hidden="true">
+    <img src="/img/banner-wildfire-2560.jpg" alt="" width="2560" height="236" loading="lazy" decoding="async">
   </div>
 
   <section class="watch">
