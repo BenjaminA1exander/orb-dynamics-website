@@ -74,11 +74,9 @@
     "<span>Thermal camera</span>": "<span>Termalna kamera</span>",
     "<span>Zoom camera</span>": "<span>Kamera sa zumom</span>",
     "<span>Lidar</span>": "<span>Lidar</span>",
-    "<span>Gas imaging camera</span>": "<span>Kamera za snimanje plinova</span>",
-    "<span>Radar</span>": "<span>Radar</span>",
-    "<span>AIS receiver</span>": "<span>AIS prijamnik</span>",
     "Sensor fit depends on the mission. The airship is in development; payload options are design targets.": "Opremljenost senzorima ovisi o zadatku. Zračni brod je u razvoju; mogućnosti korisnog tereta projektni su ciljevi.",
     "Tackling wildfires in rural areas": "Borba protiv požara u ruralnim područjima",
-    "In sparsely populated countryside a fire can grow for a long time before anyone sees it. A fleet of airships keeps the whole area under watch, day and night.": "U rijetko naseljenim krajevima požar se može dugo širiti prije nego što ga itko primijeti. Flota zračnih brodova drži cijelo područje pod nadzorom, danju i noću."
+    "In sparsely populated countryside a fire can grow for a long time before anyone sees it. A fleet of airships keeps the whole area under watch, day and night.": "U rijetko naseljenim krajevima požar se može dugo širiti prije nego što ga itko primijeti. Flota zračnih brodova drži cijelo područje pod nadzorom, danju i noću.",
+    "<span>Hyperspectral camera</span>": "<span>Hiperspektralna kamera</span>"
   }
 }

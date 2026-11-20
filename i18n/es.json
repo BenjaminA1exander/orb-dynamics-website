@@ -74,11 +74,9 @@
     "<span>Thermal camera</span>": "<span>Cámara térmica</span>",
     "<span>Zoom camera</span>": "<span>Cámara con zoom</span>",
     "<span>Lidar</span>": "<span>Lidar</span>",
-    "<span>Gas imaging camera</span>": "<span>Cámara de imagen de gases</span>",
-    "<span>Radar</span>": "<span>Radar</span>",
-    "<span>AIS receiver</span>": "<span>Receptor AIS</span>",
     "Sensor fit depends on the mission. The airship is in development; payload options are design targets.": "La configuración de sensores depende de la misión. El dirigible está en desarrollo; las opciones de carga útil son objetivos de diseño.",
     "Tackling wildfires in rural areas": "Contra los incendios en zonas rurales",
-    "In sparsely populated countryside a fire can grow for a long time before anyone sees it. A fleet of airships keeps the whole area under watch, day and night.": "En el campo poco poblado, un incendio puede crecer mucho tiempo antes de que alguien lo vea. Una flota de dirigibles mantiene toda la zona vigilada, de día y de noche."
+    "In sparsely populated countryside a fire can grow for a long time before anyone sees it. A fleet of airships keeps the whole area under watch, day and night.": "En el campo poco poblado, un incendio puede crecer mucho tiempo antes de que alguien lo vea. Una flota de dirigibles mantiene toda la zona vigilada, de día y de noche.",
+    "<span>Hyperspectral camera</span>": "<span>Cámara hiperespectral</span>"
   }
 }

@@ -74,11 +74,9 @@
     "<span>Thermal camera</span>": "<span>Termokamera</span>",
     "<span>Zoom camera</span>": "<span>Tālummaiņas kamera</span>",
     "<span>Lidar</span>": "<span>Lidars</span>",
-    "<span>Gas imaging camera</span>": "<span>Gāzu attēlošanas kamera</span>",
-    "<span>Radar</span>": "<span>Radars</span>",
-    "<span>AIS receiver</span>": "<span>AIS uztvērējs</span>",
     "Sensor fit depends on the mission. The airship is in development; payload options are design targets.": "Sensoru komplekts ir atkarīgs no uzdevuma. Dirižablis tiek izstrādāts; lietderīgās kravas iespējas ir projekta mērķi.",
     "Tackling wildfires in rural areas": "Cīņa ar ugunsgrēkiem lauku apvidos",
-    "In sparsely populated countryside a fire can grow for a long time before anyone sees it. A fleet of airships keeps the whole area under watch, day and night.": "Reti apdzīvotos lauku apvidos ugunsgrēks var ilgi izplatīties, pirms kāds to pamana. Dirižabļu flote uztur visu teritoriju novērošanā dienu un nakti."
+    "In sparsely populated countryside a fire can grow for a long time before anyone sees it. A fleet of airships keeps the whole area under watch, day and night.": "Reti apdzīvotos lauku apvidos ugunsgrēks var ilgi izplatīties, pirms kāds to pamana. Dirižabļu flote uztur visu teritoriju novērošanā dienu un nakti.",
+    "<span>Hyperspectral camera</span>": "<span>Hiperspektrālā kamera</span>"
   }
 }
