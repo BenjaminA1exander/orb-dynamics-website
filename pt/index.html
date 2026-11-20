@@ -182,6 +182,10 @@
   h2 { font-size:28px; font-weight:600; letter-spacing:-.01em; margin-bottom:16px; }
   .muted { color:var(--muted); }
   .obs-lead { max-width:640px; }
+  /* Powerline inspection render: full-bleed, edges dissolving into the page like the hero. */
+  .obs-scene { display:block; width:100%; height:auto; max-height:88vh; object-fit:cover; margin:24px 0 8px;
+    -webkit-mask-image:linear-gradient(to bottom, transparent, #000 12%, #000 86%, transparent);
+            mask-image:linear-gradient(to bottom, transparent, #000 12%, #000 86%, transparent); }
   ul.obs { list-style:none; margin-top:28px; }
   ul.obs li { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.8fr); gap:8px 40px; align-items:center; padding:18px 0; border-top:1px solid var(--line); }
   ul.obs li:last-child { border-bottom:1px solid var(--line); }
@@ -368,6 +372,9 @@
     <div class="wrap">
       <h2>O que vigia</h2>
       <p class="muted obs-lead">Um único dirigível mantém-se sobre uma zona durante um dia ou mais e leva os sensores de que cada trabalho precisa. Todas as utilizações são observação a partir do ar.</p>
+    </div>
+    <img class="obs-scene" src="/img/powerline-inspection-1920.jpg" alt="Imagem conceptual: um dirigível ORB inspeciona uma linha de alta tensão sobre uma floresta de coníferas." width="1920" height="800" loading="lazy" decoding="async">
+    <div class="wrap">
       <ul class="obs">
         <li><div class="obs-what"><b>Deteção de incêndios rurais</b><span class="muted">Deteta calor e fumo cedo, de dia e de noite, e continua a vigiar o incêndio depois de detetado.</span></div>
           <div class="obs-kit"><span>Câmara térmica</span><span>Câmara com zoom</span></div></li>

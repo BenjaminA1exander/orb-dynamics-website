@@ -182,6 +182,10 @@
   h2 { font-size:28px; font-weight:600; letter-spacing:-.01em; margin-bottom:16px; }
   .muted { color:var(--muted); }
   .obs-lead { max-width:640px; }
+  /* Powerline inspection render: full-bleed, edges dissolving into the page like the hero. */
+  .obs-scene { display:block; width:100%; height:auto; max-height:88vh; object-fit:cover; margin:24px 0 8px;
+    -webkit-mask-image:linear-gradient(to bottom, transparent, #000 12%, #000 86%, transparent);
+            mask-image:linear-gradient(to bottom, transparent, #000 12%, #000 86%, transparent); }
   ul.obs { list-style:none; margin-top:28px; }
   ul.obs li { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.8fr); gap:8px 40px; align-items:center; padding:18px 0; border-top:1px solid var(--line); }
   ul.obs li:last-child { border-bottom:1px solid var(--line); }
@@ -368,6 +372,9 @@
     <div class="wrap">
       <h2>Co obserwuje</h2>
       <p class="muted obs-lead">Jeden sterowiec pozostaje nad obszarem przez dzień lub dłużej i przenosi czujniki potrzebne do każdego zadania. Każde zastosowanie to obserwacja z powietrza.</p>
+    </div>
+    <img class="obs-scene" src="/img/powerline-inspection-1920.jpg" alt="Obraz koncepcyjny: sterowiec ORB kontroluje linię wysokiego napięcia nad lasem iglastym." width="1920" height="800" loading="lazy" decoding="async">
+    <div class="wrap">
       <ul class="obs">
         <li><div class="obs-what"><b>Wykrywanie pożarów lasów</b><span class="muted">Wcześnie wykrywa ciepło i dym, w dzień i w nocy, i dalej obserwuje pożar po jego wykryciu.</span></div>
           <div class="obs-kit"><span>Kamera termowizyjna</span><span>Kamera z zoomem</span></div></li>
