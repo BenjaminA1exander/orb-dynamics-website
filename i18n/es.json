@@ -1,5 +1,9 @@
 {
-  "meta": { "name": "Español", "locale": "es_ES", "language_label": "Idioma" },
+  "meta": {
+    "name": "Español",
+    "locale": "es_ES",
+    "language_label": "Idioma"
+  },
   "strings": {
     "ORB Dynamics | Hydrogen airships for wildfire detection": "ORB Dynamics | Dirigibles de hidrógeno para la detección de incendios forestales",
     "ORB Dynamics builds autonomous hydrogen airships that stay aloft for 24 hours or more, for persistent wildfire detection and infrastructure patrol. Incubated at YES!Delft.": "ORB Dynamics desarrolla dirigibles autónomos de hidrógeno que permanecen en el aire 24 horas o más, para la detección continua de incendios forestales y la vigilancia de infraestructuras. Incubada en YES!Delft.",
@@ -60,6 +64,8 @@
     "Make the ORB airship fly": "Hagamos volar el dirigible ORB",
     "We are seeking expertise, support and funding.": "Buscamos conocimientos especializados, apoyo y financiación.",
     ">Get in touch</a>": ">Hablemos</a>",
-    "<span>Founded by <a": "<span>Fundada por <a"
+    "<span>Founded by <a": "<span>Fundada por <a",
+    "Concept render: the ORB airship rising from its shipping container at a dry-grassland site, with solar panels and a hydrogen electrolyser.": "Render conceptual: el dirigible ORB se eleva desde su contenedor marítimo en un terreno de pasto seco, con paneles solares y un electrolizador de hidrógeno.",
+    "<span class=\"t-short\">Hydrogen airships</span>": "<span class=\"t-short\">Dirigibles de hidrógeno</span>"
   }
 }

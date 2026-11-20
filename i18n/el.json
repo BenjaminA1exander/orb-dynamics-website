@@ -1,5 +1,9 @@
 {
-  "meta": { "name": "Ελληνικά", "locale": "el_GR", "language_label": "Γλώσσα" },
+  "meta": {
+    "name": "Ελληνικά",
+    "locale": "el_GR",
+    "language_label": "Γλώσσα"
+  },
   "strings": {
     "ORB Dynamics | Hydrogen airships for wildfire detection": "ORB Dynamics | Ζέπελιν υδρογόνου για τον εντοπισμό δασικών πυρκαγιών",
     "ORB Dynamics builds autonomous hydrogen airships that stay aloft for 24 hours or more, for persistent wildfire detection and infrastructure patrol. Incubated at YES!Delft.": "Η ORB Dynamics κατασκευάζει αυτόνομα ζέπελιν υδρογόνου που παραμένουν στον αέρα για 24 ώρες ή περισσότερο, για τον διαρκή εντοπισμό δασικών πυρκαγιών και επιτήρηση υποδομών. Θερμοκοιτίδα: YES!Delft.",
@@ -60,6 +64,8 @@
     "Make the ORB airship fly": "Βοηθήστε το ORB να πετάξει",
     "We are seeking expertise, support and funding.": "Αναζητούμε τεχνογνωσία, υποστήριξη και χρηματοδότηση.",
     ">Get in touch</a>": ">Επικοινωνήστε μαζί μας</a>",
-    "<span>Founded by <a": "<span>Ιδρύθηκε από <a"
+    "<span>Founded by <a": "<span>Ιδρύθηκε από <a",
+    "Concept render: the ORB airship rising from its shipping container at a dry-grassland site, with solar panels and a hydrogen electrolyser.": "Απεικόνιση σχεδίου: το ζέπελιν ORB ανυψώνεται από το εμπορευματοκιβώτιό του σε τοποθεσία με ξερό λιβάδι, με ηλιακά πάνελ και ηλεκτρολύτη υδρογόνου.",
+    "<span class=\"t-short\">Hydrogen airships</span>": "<span class=\"t-short\">Ζέπελιν υδρογόνου</span>"
   }
 }
