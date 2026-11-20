@@ -71,7 +71,7 @@
       "logo": { "@type": "ImageObject", "url": "https://orbdynamics.eu/img/icon-512.png", "width": 512, "height": 512 },
       "image": "https://orbdynamics.eu/img/spin/az080.jpg",
       "email": "contact@orbdynamics.eu",
-      "description": "ORB Dynamics dezvoltă dirijabile autonome cu hidrogen, cu durată lungă de zbor, pentru supravegherea aeriană continuă: detectarea incendiilor de pădure, supravegherea infrastructurii și misiuni pentru instituții publice (linii electrice, conducte, căi ferate, zone maritime) și transport autonom de marfă pe distanțe medii. Obiectiv de proiectare: 24 de ore sau mai mult în aer, rază de acțiune de 1.000-2.000 km, cu pile de combustie cu hidrogen a căror singură emisie este apa.",
+      "description": "ORB Dynamics dezvoltă dirijabile autonome cu hidrogen, cu durată lungă de zbor, pentru supravegherea aeriană continuă: detectarea incendiilor de pădure, supravegherea infrastructurii și misiuni pentru instituții publice (linii electrice, conducte, căi ferate, zone maritime). Obiectiv de proiectare: 24 de ore sau mai mult în aer, rază de acțiune de 1.000-2.000 km, cu pile de combustie cu hidrogen a căror singură emisie este apa.",
       "knowsAbout": ["Dirijabile", "Pile de combustie cu hidrogen", "Detectarea incendiilor de pădure", "Inspecția infrastructurii", "Aeronave autonome", "Supraveghere aeriană continuă"],
       "sameAs": ["https://www.linkedin.com/company/orbdynamics/"],
       "founder": [
@@ -177,9 +177,16 @@
   .sim figcaption { color:var(--muted); font-size:13px; margin-top:10px; }
   h2 { font-size:28px; font-weight:600; letter-spacing:-.01em; margin-bottom:16px; }
   .muted { color:var(--muted); }
-  ul.markets { list-style:none; margin-top:20px; }
-  ul.markets li { padding:12px 0; border-top:1px solid var(--line); }
-  ul.markets li b { display:block; }
+  .obs-lead { max-width:640px; }
+  ul.obs { list-style:none; margin-top:28px; }
+  ul.obs li { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.8fr); gap:8px 40px; align-items:center; padding:18px 0; border-top:1px solid var(--line); }
+  ul.obs li:last-child { border-bottom:1px solid var(--line); }
+  .obs-what b { display:block; font-size:17px; font-weight:600; }
+  .obs-what span { display:block; font-size:15px; }
+  .obs-kit { display:flex; flex-wrap:wrap; gap:8px; justify-content:flex-end; }
+  .obs-kit span { font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--fg); border:1px solid #3a3a44; border-radius:999px; padding:4px 11px; white-space:nowrap; }
+  .obs-note { margin-top:14px; color:var(--muted); font-size:12px; }
+  @media (max-width:760px) { ul.obs li { grid-template-columns:1fr; } .obs-kit { justify-content:flex-start; } }
 
   .partners { text-align:center; }
   .partners .logos { display:flex; justify-content:center; flex-wrap:wrap; gap:40px 64px; }
@@ -351,15 +358,21 @@
 
   <section class="markets-sec">
     <div class="wrap">
-      <div>
-        <h2>O platformă, mai multe piețe</h2>
-        <p class="muted">Supraveghere autonomă, continuă și fără emisii de carbon acolo unde acoperirea este slabă.</p>
-        <ul class="markets">
-          <li><b>Detectarea incendiilor de pădure</b><span class="muted">Alerte timpurii pentru pompieri</span></li>
-          <li><b>Infrastructură și instituții publice</b><span class="muted">Supravegherea liniilor electrice, conductelor, căilor ferate și zonelor maritime</span></li>
-          <li><b>Transport de marfă</b><span class="muted">Transport autonom de marfă pe distanțe medii</span></li>
-        </ul>
-      </div>
+      <h2>Ce supraveghează</h2>
+      <p class="muted obs-lead">Un singur dirijabil rămâne deasupra unei zone o zi sau mai mult și poartă senzorii de care are nevoie fiecare misiune. Orice utilizare este observare din aer.</p>
+      <ul class="obs">
+        <li><div class="obs-what"><b>Detectarea incendiilor de pădure</b><span class="muted">Detectează din timp căldura și fumul, zi și noapte, și continuă să urmărească incendiul după ce este găsit.</span></div>
+          <div class="obs-kit"><span>Cameră termică</span><span>Cameră cu zoom</span></div></li>
+        <li><div class="obs-what"><b>Linii electrice</b><span class="muted">Găsește copacii care cresc spre linii și punctele fierbinți de pe conductoare și îmbinări înainte să cedeze.</span></div>
+          <div class="obs-kit"><span>Lidar</span><span>Cameră termică</span><span>Cameră cu zoom</span></div></li>
+        <li><div class="obs-what"><b>Conducte</b><span class="muted">Supraveghează traseul pentru scurgeri de gaz și pentru săpături sau construcții prea aproape de conductă.</span></div>
+          <div class="obs-kit"><span>Cameră de imagistică a gazelor</span><span>Cameră cu zoom</span></div></li>
+        <li><div class="obs-what"><b>Căi ferate și drumuri</b><span class="muted">Verifică liniile, debleele și taluzurile și găsește copaci căzuți și alunecări de teren după furtuni.</span></div>
+          <div class="obs-kit"><span>Lidar</span><span>Cameră cu zoom</span></div></li>
+        <li><div class="obs-what"><b>Coastă și mare</b><span class="muted">Urmărește navele, găsește deversări de petrol și sprijină căutarea și salvarea departe de țărm.</span></div>
+          <div class="obs-kit"><span>Radar</span><span>Receptor AIS</span><span>Cameră termică</span></div></li>
+      </ul>
+      <p class="notes obs-note">Echiparea cu senzori depinde de misiune. Dirijabilul este în dezvoltare; opțiunile de sarcină utilă sunt obiective de proiectare.</p>
     </div>
   </section>
 

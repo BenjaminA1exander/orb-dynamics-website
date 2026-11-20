@@ -71,7 +71,7 @@
       "logo": { "@type": "ImageObject", "url": "https://orbdynamics.eu/img/icon-512.png", "width": 512, "height": 512 },
       "image": "https://orbdynamics.eu/img/spin/az080.jpg",
       "email": "contact@orbdynamics.eu",
-      "description": "ORB Dynamics desarrolla dirigibles autónomos de hidrógeno y larga duración de vuelo para la vigilancia aérea continua: detección de incendios forestales, vigilancia de infraestructuras y para administraciones públicas (líneas eléctricas, oleoductos y gasoductos, ferrocarril, zonas marítimas) y carga autónoma de media distancia. Objetivo de diseño: 24 horas o más en el aire y 1000-2000 km de alcance, con pilas de combustible de hidrógeno cuya única emisión es agua.",
+      "description": "ORB Dynamics desarrolla dirigibles autónomos de hidrógeno y larga duración de vuelo para la vigilancia aérea continua: detección de incendios forestales, vigilancia de infraestructuras y para administraciones públicas (líneas eléctricas, oleoductos y gasoductos, ferrocarril, zonas marítimas). Objetivo de diseño: 24 horas o más en el aire y 1000-2000 km de alcance, con pilas de combustible de hidrógeno cuya única emisión es agua.",
       "knowsAbout": ["Dirigibles", "Pilas de combustible de hidrógeno", "Detección de incendios forestales", "Inspección de infraestructuras", "Aeronaves autónomas", "Vigilancia aérea continua"],
       "sameAs": ["https://www.linkedin.com/company/orbdynamics/"],
       "founder": [
@@ -177,9 +177,16 @@
   .sim figcaption { color:var(--muted); font-size:13px; margin-top:10px; }
   h2 { font-size:28px; font-weight:600; letter-spacing:-.01em; margin-bottom:16px; }
   .muted { color:var(--muted); }
-  ul.markets { list-style:none; margin-top:20px; }
-  ul.markets li { padding:12px 0; border-top:1px solid var(--line); }
-  ul.markets li b { display:block; }
+  .obs-lead { max-width:640px; }
+  ul.obs { list-style:none; margin-top:28px; }
+  ul.obs li { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.8fr); gap:8px 40px; align-items:center; padding:18px 0; border-top:1px solid var(--line); }
+  ul.obs li:last-child { border-bottom:1px solid var(--line); }
+  .obs-what b { display:block; font-size:17px; font-weight:600; }
+  .obs-what span { display:block; font-size:15px; }
+  .obs-kit { display:flex; flex-wrap:wrap; gap:8px; justify-content:flex-end; }
+  .obs-kit span { font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--fg); border:1px solid #3a3a44; border-radius:999px; padding:4px 11px; white-space:nowrap; }
+  .obs-note { margin-top:14px; color:var(--muted); font-size:12px; }
+  @media (max-width:760px) { ul.obs li { grid-template-columns:1fr; } .obs-kit { justify-content:flex-start; } }
 
   .partners { text-align:center; }
   .partners .logos { display:flex; justify-content:center; flex-wrap:wrap; gap:40px 64px; }
@@ -351,15 +358,21 @@
 
   <section class="markets-sec">
     <div class="wrap">
-      <div>
-        <h2>Una plataforma, múltiples mercados</h2>
-        <p class="muted">Vigilancia autónoma, continua y sin emisiones de carbono allí donde la cobertura es escasa.</p>
-        <ul class="markets">
-          <li><b>Detección de incendios forestales</b><span class="muted">Alertas tempranas para los equipos de extinción</span></li>
-          <li><b>Infraestructuras y administraciones públicas</b><span class="muted">Vigilancia de líneas eléctricas, oleoductos y gasoductos, ferrocarril y zonas marítimas</span></li>
-          <li><b>Transporte de carga</b><span class="muted">Carga autónoma de media distancia</span></li>
-        </ul>
-      </div>
+      <h2>Qué vigila</h2>
+      <p class="muted obs-lead">Un solo dirigible permanece sobre una zona un día o más y lleva los sensores que necesita cada trabajo. Todos los usos son observación desde el aire.</p>
+      <ul class="obs">
+        <li><div class="obs-what"><b>Detección de incendios forestales</b><span class="muted">Detecta calor y humo a tiempo, de día y de noche, y sigue vigilando el incendio una vez encontrado.</span></div>
+          <div class="obs-kit"><span>Cámara térmica</span><span>Cámara con zoom</span></div></li>
+        <li><div class="obs-what"><b>Líneas eléctricas</b><span class="muted">Encuentra árboles que crecen hacia las líneas y puntos calientes en conductores y empalmes antes de que fallen.</span></div>
+          <div class="obs-kit"><span>Lidar</span><span>Cámara térmica</span><span>Cámara con zoom</span></div></li>
+        <li><div class="obs-what"><b>Oleoductos y gasoductos</b><span class="muted">Vigila el trazado en busca de fugas de gas y de excavaciones u obras demasiado cerca de la tubería.</span></div>
+          <div class="obs-kit"><span>Cámara de imagen de gases</span><span>Cámara con zoom</span></div></li>
+        <li><div class="obs-what"><b>Ferrocarril y carreteras</b><span class="muted">Revisa vías, trincheras y taludes, y localiza árboles caídos y deslizamientos tras las tormentas.</span></div>
+          <div class="obs-kit"><span>Lidar</span><span>Cámara con zoom</span></div></li>
+        <li><div class="obs-what"><b>Costa y mar</b><span class="muted">Sigue buques, detecta vertidos de petróleo y apoya la búsqueda y el rescate lejos de la costa.</span></div>
+          <div class="obs-kit"><span>Radar</span><span>Receptor AIS</span><span>Cámara térmica</span></div></li>
+      </ul>
+      <p class="notes obs-note">La configuración de sensores depende de la misión. El dirigible está en desarrollo; las opciones de carga útil son objetivos de diseño.</p>
     </div>
   </section>
 

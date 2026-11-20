@@ -71,7 +71,7 @@
       "logo": { "@type": "ImageObject", "url": "https://orbdynamics.eu/img/icon-512.png", "width": 512, "height": 512 },
       "image": "https://orbdynamics.eu/img/spin/az080.jpg",
       "email": "contact@orbdynamics.eu",
-      "description": "ORB Dynamics kuria ilgai ore išbūnančius autonominius vandenilio dirižablius nuolatiniam stebėjimui iš oro: miško gaisrų aptikimui, infrastruktūros stebėjimui ir valstybės institucijoms (elektros linijos, vamzdynai, geležinkeliai, jūros teritorijos) bei autonominiam krovinių gabenimui vidutiniu atstumu. Projektinis tikslas: 24 valandos ar ilgiau ore, 1000-2000 km nuotolis, vandenilio kuro elementai, kurių vienintelė emisija yra vanduo.",
+      "description": "ORB Dynamics kuria ilgai ore išbūnančius autonominius vandenilio dirižablius nuolatiniam stebėjimui iš oro: miško gaisrų aptikimui, infrastruktūros stebėjimui ir valstybės institucijoms (elektros linijos, vamzdynai, geležinkeliai, jūros teritorijos). Projektinis tikslas: 24 valandos ar ilgiau ore, 1000-2000 km nuotolis, vandenilio kuro elementai, kurių vienintelė emisija yra vanduo.",
       "knowsAbout": ["Dirižabliai", "Vandenilio kuro elementai", "Miško gaisrų aptikimas", "Infrastruktūros tikrinimas", "Autonominiai orlaiviai", "Nuolatinis stebėjimas iš oro"],
       "sameAs": ["https://www.linkedin.com/company/orbdynamics/"],
       "founder": [
@@ -177,9 +177,16 @@
   .sim figcaption { color:var(--muted); font-size:13px; margin-top:10px; }
   h2 { font-size:28px; font-weight:600; letter-spacing:-.01em; margin-bottom:16px; }
   .muted { color:var(--muted); }
-  ul.markets { list-style:none; margin-top:20px; }
-  ul.markets li { padding:12px 0; border-top:1px solid var(--line); }
-  ul.markets li b { display:block; }
+  .obs-lead { max-width:640px; }
+  ul.obs { list-style:none; margin-top:28px; }
+  ul.obs li { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.8fr); gap:8px 40px; align-items:center; padding:18px 0; border-top:1px solid var(--line); }
+  ul.obs li:last-child { border-bottom:1px solid var(--line); }
+  .obs-what b { display:block; font-size:17px; font-weight:600; }
+  .obs-what span { display:block; font-size:15px; }
+  .obs-kit { display:flex; flex-wrap:wrap; gap:8px; justify-content:flex-end; }
+  .obs-kit span { font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--fg); border:1px solid #3a3a44; border-radius:999px; padding:4px 11px; white-space:nowrap; }
+  .obs-note { margin-top:14px; color:var(--muted); font-size:12px; }
+  @media (max-width:760px) { ul.obs li { grid-template-columns:1fr; } .obs-kit { justify-content:flex-start; } }
 
   .partners { text-align:center; }
   .partners .logos { display:flex; justify-content:center; flex-wrap:wrap; gap:40px 64px; }
@@ -351,15 +358,21 @@
 
   <section class="markets-sec">
     <div class="wrap">
-      <div>
-        <h2>Viena platforma, daug rinkų</h2>
-        <p class="muted">Nuolatinis autonominis stebėjimas be CO₂ emisijų ten, kur trūksta aprėpties.</p>
-        <ul class="markets">
-          <li><b>Miško gaisrų aptikimas</b><span class="muted">Ankstyvas perspėjimas ugniagesiams</span></li>
-          <li><b>Infrastruktūra ir valstybės institucijos</b><span class="muted">Elektros linijų, vamzdynų, geležinkelių ir jūros teritorijų stebėjimas</span></li>
-          <li><b>Krovinių gabenimas</b><span class="muted">Autonominis krovinių gabenimas vidutiniu atstumu</span></li>
-        </ul>
-      </div>
+      <h2>Ką jis stebi</h2>
+      <p class="muted obs-lead">Vienas dirižablis išbūna virš teritorijos parą ar ilgiau ir neša jutiklius, kurių reikia kiekvienai užduočiai. Kiekvienas panaudojimas yra stebėjimas iš oro.</p>
+      <ul class="obs">
+        <li><div class="obs-what"><b>Miško gaisrų aptikimas</b><span class="muted">Anksti aptinka karštį ir dūmus dieną ir naktį ir toliau stebi gaisrą, kai jis aptinkamas.</span></div>
+          <div class="obs-kit"><span>Termovizorinė kamera</span><span>Kamera su priartinimu</span></div></li>
+        <li><div class="obs-what"><b>Elektros linijos</b><span class="muted">Aptinka į linijas įaugančius medžius ir įkaitusias laidų bei jungčių vietas, kol jos dar nesugedo.</span></div>
+          <div class="obs-kit"><span>Lidaras</span><span>Termovizorinė kamera</span><span>Kamera su priartinimu</span></div></li>
+        <li><div class="obs-what"><b>Vamzdynai</b><span class="muted">Stebi trasą, ar nėra dujų nuotėkių ir kasimo ar statybų per arti vamzdžio.</span></div>
+          <div class="obs-kit"><span>Dujų vaizdinimo kamera</span><span>Kamera su priartinimu</span></div></li>
+        <li><div class="obs-what"><b>Geležinkeliai ir keliai</b><span class="muted">Tikrina bėgius, iškasas ir šlaitus, o po audrų aptinka nuvirtusius medžius ir nuošliaužas.</span></div>
+          <div class="obs-kit"><span>Lidaras</span><span>Kamera su priartinimu</span></div></li>
+        <li><div class="obs-what"><b>Pakrantė ir jūra</b><span class="muted">Seka laivus, aptinka naftos dėmes ir padeda paieškos ir gelbėjimo darbams toli nuo kranto.</span></div>
+          <div class="obs-kit"><span>Radaras</span><span>AIS imtuvas</span><span>Termovizorinė kamera</span></div></li>
+      </ul>
+      <p class="notes obs-note">Jutiklių komplektas priklauso nuo užduoties. Dirižablis kuriamas; naudingosios apkrovos galimybės yra projektiniai tikslai.</p>
     </div>
   </section>
 

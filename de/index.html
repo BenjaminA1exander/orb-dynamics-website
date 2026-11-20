@@ -71,7 +71,7 @@
       "logo": { "@type": "ImageObject", "url": "https://orbdynamics.eu/img/icon-512.png", "width": 512, "height": 512 },
       "image": "https://orbdynamics.eu/img/spin/az080.jpg",
       "email": "contact@orbdynamics.eu",
-      "description": "ORB Dynamics entwickelt autonome Wasserstoff-Luftschiffe mit langer Flugdauer für die kontinuierliche Überwachung aus der Luft: Früherkennung von Waldbränden, Überwachung von Infrastruktur und für Behörden (Stromleitungen, Pipelines, Bahnstrecken, Seegebiete) und autonomer Gütertransport auf mittleren Distanzen. Entwicklungsziel: 24 Stunden oder länger in der Luft, 1.000-2.000 km Reichweite, angetrieben von Wasserstoff-Brennstoffzellen, deren einzige Emission Wasser ist.",
+      "description": "ORB Dynamics entwickelt autonome Wasserstoff-Luftschiffe mit langer Flugdauer für die kontinuierliche Überwachung aus der Luft: Früherkennung von Waldbränden, Überwachung von Infrastruktur und für Behörden (Stromleitungen, Pipelines, Bahnstrecken, Seegebiete). Entwicklungsziel: 24 Stunden oder länger in der Luft, 1.000-2.000 km Reichweite, angetrieben von Wasserstoff-Brennstoffzellen, deren einzige Emission Wasser ist.",
       "knowsAbout": ["Luftschiffe", "Wasserstoff-Brennstoffzellen", "Früherkennung von Waldbränden", "Inspektion von Infrastruktur", "Autonome Luftfahrzeuge", "Kontinuierliche Überwachung aus der Luft"],
       "sameAs": ["https://www.linkedin.com/company/orbdynamics/"],
       "founder": [
@@ -177,9 +177,16 @@
   .sim figcaption { color:var(--muted); font-size:13px; margin-top:10px; }
   h2 { font-size:28px; font-weight:600; letter-spacing:-.01em; margin-bottom:16px; }
   .muted { color:var(--muted); }
-  ul.markets { list-style:none; margin-top:20px; }
-  ul.markets li { padding:12px 0; border-top:1px solid var(--line); }
-  ul.markets li b { display:block; }
+  .obs-lead { max-width:640px; }
+  ul.obs { list-style:none; margin-top:28px; }
+  ul.obs li { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.8fr); gap:8px 40px; align-items:center; padding:18px 0; border-top:1px solid var(--line); }
+  ul.obs li:last-child { border-bottom:1px solid var(--line); }
+  .obs-what b { display:block; font-size:17px; font-weight:600; }
+  .obs-what span { display:block; font-size:15px; }
+  .obs-kit { display:flex; flex-wrap:wrap; gap:8px; justify-content:flex-end; }
+  .obs-kit span { font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--fg); border:1px solid #3a3a44; border-radius:999px; padding:4px 11px; white-space:nowrap; }
+  .obs-note { margin-top:14px; color:var(--muted); font-size:12px; }
+  @media (max-width:760px) { ul.obs li { grid-template-columns:1fr; } .obs-kit { justify-content:flex-start; } }
 
   .partners { text-align:center; }
   .partners .logos { display:flex; justify-content:center; flex-wrap:wrap; gap:40px 64px; }
@@ -351,15 +358,21 @@
 
   <section class="markets-sec">
     <div class="wrap">
-      <div>
-        <h2>Eine Plattform, mehrere Märkte</h2>
-        <p class="muted">Kontinuierliche, CO₂-freie und autonome Überwachung überall dort, wo die Abdeckung lückenhaft ist.</p>
-        <ul class="markets">
-          <li><b>Früherkennung von Waldbränden</b><span class="muted">Frühwarnung für die Feuerwehr</span></li>
-          <li><b>Infrastruktur und Behörden</b><span class="muted">Überwachung von Stromleitungen, Pipelines, Bahnstrecken und Seegebieten</span></li>
-          <li><b>Gütertransport</b><span class="muted">Autonomer Gütertransport auf mittleren Distanzen</span></li>
-        </ul>
-      </div>
+      <h2>Was es überwacht</h2>
+      <p class="muted obs-lead">Ein einziges Luftschiff bleibt einen Tag oder länger über einem Gebiet und trägt die Sensoren, die jede Aufgabe braucht. Jeder Einsatz ist Beobachtung aus der Luft.</p>
+      <ul class="obs">
+        <li><div class="obs-what"><b>Früherkennung von Waldbränden</b><span class="muted">Hitze und Rauch früh erkennen, bei Tag und Nacht, und das Feuer nach der Entdeckung weiter beobachten.</span></div>
+          <div class="obs-kit"><span>Wärmebildkamera</span><span>Zoomkamera</span></div></li>
+        <li><div class="obs-what"><b>Stromleitungen</b><span class="muted">Bäume finden, die in Leitungen wachsen, und Hotspots an Leitern und Verbindungen, bevor sie ausfallen.</span></div>
+          <div class="obs-kit"><span>Lidar</span><span>Wärmebildkamera</span><span>Zoomkamera</span></div></li>
+        <li><div class="obs-what"><b>Pipelines</b><span class="muted">Die Trasse auf Gaslecks überwachen und auf Grabungen oder Bauten zu nah an der Leitung.</span></div>
+          <div class="obs-kit"><span>Gasbildkamera</span><span>Zoomkamera</span></div></li>
+        <li><div class="obs-what"><b>Schiene und Straße</b><span class="muted">Gleise, Einschnitte und Böschungen prüfen und nach Stürmen umgestürzte Bäume und Erdrutsche finden.</span></div>
+          <div class="obs-kit"><span>Lidar</span><span>Zoomkamera</span></div></li>
+        <li><div class="obs-what"><b>Küste und Meer</b><span class="muted">Schiffe verfolgen, Ölteppiche finden und Suche und Rettung fern der Küste unterstützen.</span></div>
+          <div class="obs-kit"><span>Radar</span><span>AIS-Empfänger</span><span>Wärmebildkamera</span></div></li>
+      </ul>
+      <p class="notes obs-note">Die Sensorausstattung hängt vom Einsatz ab. Das Luftschiff ist in Entwicklung; die Nutzlastoptionen sind Entwicklungsziele.</p>
     </div>
   </section>
 

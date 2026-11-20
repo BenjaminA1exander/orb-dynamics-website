@@ -71,7 +71,7 @@
       "logo": { "@type": "ImageObject", "url": "https://orbdynamics.eu/img/icon-512.png", "width": 512, "height": 512 },
       "image": "https://orbdynamics.eu/img/spin/az080.jpg",
       "email": "contact@orbdynamics.eu",
-      "description": "ORB Dynamics développe des dirigeables autonomes à hydrogène de longue endurance pour la surveillance aérienne continue : détection des feux de forêt, surveillance des infrastructures et missions pour les services publics (lignes électriques, oléoducs et gazoducs, voies ferrées, zones maritimes) et fret autonome sur moyenne distance. Objectif de conception : 24 heures ou plus en vol et 1 000-2 000 km de portée, avec des piles à combustible à hydrogène dont la seule émission est de l’eau.",
+      "description": "ORB Dynamics développe des dirigeables autonomes à hydrogène de longue endurance pour la surveillance aérienne continue : détection des feux de forêt, surveillance des infrastructures et missions pour les services publics (lignes électriques, oléoducs et gazoducs, voies ferrées, zones maritimes). Objectif de conception : 24 heures ou plus en vol et 1 000-2 000 km de portée, avec des piles à combustible à hydrogène dont la seule émission est de l’eau.",
       "knowsAbout": ["Dirigeables", "Piles à combustible à hydrogène", "Détection des feux de forêt", "Inspection des infrastructures", "Aéronefs autonomes", "Surveillance aérienne continue"],
       "sameAs": ["https://www.linkedin.com/company/orbdynamics/"],
       "founder": [
@@ -177,9 +177,16 @@
   .sim figcaption { color:var(--muted); font-size:13px; margin-top:10px; }
   h2 { font-size:28px; font-weight:600; letter-spacing:-.01em; margin-bottom:16px; }
   .muted { color:var(--muted); }
-  ul.markets { list-style:none; margin-top:20px; }
-  ul.markets li { padding:12px 0; border-top:1px solid var(--line); }
-  ul.markets li b { display:block; }
+  .obs-lead { max-width:640px; }
+  ul.obs { list-style:none; margin-top:28px; }
+  ul.obs li { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.8fr); gap:8px 40px; align-items:center; padding:18px 0; border-top:1px solid var(--line); }
+  ul.obs li:last-child { border-bottom:1px solid var(--line); }
+  .obs-what b { display:block; font-size:17px; font-weight:600; }
+  .obs-what span { display:block; font-size:15px; }
+  .obs-kit { display:flex; flex-wrap:wrap; gap:8px; justify-content:flex-end; }
+  .obs-kit span { font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--fg); border:1px solid #3a3a44; border-radius:999px; padding:4px 11px; white-space:nowrap; }
+  .obs-note { margin-top:14px; color:var(--muted); font-size:12px; }
+  @media (max-width:760px) { ul.obs li { grid-template-columns:1fr; } .obs-kit { justify-content:flex-start; } }
 
   .partners { text-align:center; }
   .partners .logos { display:flex; justify-content:center; flex-wrap:wrap; gap:40px 64px; }
@@ -351,15 +358,21 @@
 
   <section class="markets-sec">
     <div class="wrap">
-      <div>
-        <h2>Une plateforme, plusieurs marchés</h2>
-        <p class="muted">Une surveillance autonome, continue et zéro carbone là où la couverture est insuffisante.</p>
-        <ul class="markets">
-          <li><b>Détection des feux de forêt</b><span class="muted">Alertes précoces pour les sapeurs-pompiers</span></li>
-          <li><b>Infrastructures et services publics</b><span class="muted">Surveillance des lignes électriques, oléoducs et gazoducs, voies ferrées et zones maritimes</span></li>
-          <li><b>Transport de fret</b><span class="muted">Fret autonome sur moyenne distance</span></li>
-        </ul>
-      </div>
+      <h2>Ce qu’il surveille</h2>
+      <p class="muted obs-lead">Un seul dirigeable reste au-dessus d’une zone pendant un jour ou plus et emporte les capteurs dont chaque mission a besoin. Chaque usage relève de l’observation aérienne.</p>
+      <ul class="obs">
+        <li><div class="obs-what"><b>Détection des feux de forêt</b><span class="muted">Repérer tôt la chaleur et la fumée, de jour comme de nuit, et continuer à surveiller le feu une fois détecté.</span></div>
+          <div class="obs-kit"><span>Caméra thermique</span><span>Caméra zoom</span></div></li>
+        <li><div class="obs-what"><b>Lignes électriques</b><span class="muted">Repérer les arbres qui poussent vers les lignes et les points chauds sur les conducteurs et les jonctions avant la panne.</span></div>
+          <div class="obs-kit"><span>Lidar</span><span>Caméra thermique</span><span>Caméra zoom</span></div></li>
+        <li><div class="obs-what"><b>Oléoducs et gazoducs</b><span class="muted">Surveiller le tracé pour détecter les fuites de gaz et les travaux trop proches de la conduite.</span></div>
+          <div class="obs-kit"><span>Caméra d’imagerie des gaz</span><span>Caméra zoom</span></div></li>
+        <li><div class="obs-what"><b>Voies ferrées et routes</b><span class="muted">Contrôler voies, tranchées et talus, et repérer arbres tombés et glissements de terrain après les tempêtes.</span></div>
+          <div class="obs-kit"><span>Lidar</span><span>Caméra zoom</span></div></li>
+        <li><div class="obs-what"><b>Côte et mer</b><span class="muted">Suivre les navires, repérer les nappes de pétrole et appuyer la recherche et le sauvetage loin des côtes.</span></div>
+          <div class="obs-kit"><span>Radar</span><span>Récepteur AIS</span><span>Caméra thermique</span></div></li>
+      </ul>
+      <p class="notes obs-note">L’équipement en capteurs dépend de la mission. Le dirigeable est en développement ; les options de charge utile sont des objectifs de conception.</p>
     </div>
   </section>
 

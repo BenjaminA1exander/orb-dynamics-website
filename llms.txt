@@ -2,11 +2,15 @@
 
 > ORB Dynamics develops autonomous, long-endurance hydrogen airships for persistent aerial watch. The design target is 24 hours or more on station per flight and a range of 1,000-2,000 km, powered by hydrogen fuel cells whose only exhaust is water. Incubated at YES!Delft, with research from TU Delft.
 
-## What the airship does
+## What the airship watches
 
-- Wildfire detection: early alerts for fire crews, from an airship that stays over the area instead of landing to refuel.
-- Infrastructure and government: patrol of powerlines, pipelines, rail and maritime areas.
-- Cargo transport: autonomous middle-mile freight.
+Every use is observation from the air. One airship stays over an area for a day or more and carries the sensors each job needs. The airship is in development; payload options are design targets.
+
+- Wildfire detection: spot heat and smoke early, day and night, and keep watching the fire after it is found (thermal and zoom cameras).
+- Powerlines: find trees growing into lines and hot spots on conductors and joints (lidar, thermal and zoom cameras).
+- Pipelines: watch the route for gas leaks and for digging or building too close to the pipe (gas imaging and zoom cameras).
+- Rail and roads: check track, cuttings and slopes, and find fallen trees and landslides after storms (lidar, zoom camera).
+- Coast and sea: track vessels, find oil spills and support search and rescue far from shore (radar, AIS receiver, thermal camera).
 
 ## Why an airship
 

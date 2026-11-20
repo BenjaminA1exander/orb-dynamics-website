@@ -71,7 +71,7 @@
       "logo": { "@type": "ImageObject", "url": "https://orbdynamics.eu/img/icon-512.png", "width": 512, "height": 512 },
       "image": "https://orbdynamics.eu/img/spin/az080.jpg",
       "email": "contact@orbdynamics.eu",
-      "description": "ORB Dynamics razvija autonomne zračne brodove na vodik dugog trajanja leta za stalni nadzor iz zraka: otkrivanje šumskih požara, nadzor infrastrukture i za javnu upravu (dalekovodi, cjevovodi, željeznica, morska područja) te autonomni prijevoz tereta na srednje udaljenosti. Projektni cilj: 24 sata ili dulje u zraku, domet 1.000-2.000 km, pogon vodikovim gorivnim ćelijama čija je jedina emisija voda.",
+      "description": "ORB Dynamics razvija autonomne zračne brodove na vodik dugog trajanja leta za stalni nadzor iz zraka: otkrivanje šumskih požara, nadzor infrastrukture i za javnu upravu (dalekovodi, cjevovodi, željeznica, morska područja). Projektni cilj: 24 sata ili dulje u zraku, domet 1.000-2.000 km, pogon vodikovim gorivnim ćelijama čija je jedina emisija voda.",
       "knowsAbout": ["Zračni brodovi", "Vodikove gorivne ćelije", "Otkrivanje šumskih požara", "Pregled infrastrukture", "Autonomne letjelice", "Stalni nadzor iz zraka"],
       "sameAs": ["https://www.linkedin.com/company/orbdynamics/"],
       "founder": [
@@ -177,9 +177,16 @@
   .sim figcaption { color:var(--muted); font-size:13px; margin-top:10px; }
   h2 { font-size:28px; font-weight:600; letter-spacing:-.01em; margin-bottom:16px; }
   .muted { color:var(--muted); }
-  ul.markets { list-style:none; margin-top:20px; }
-  ul.markets li { padding:12px 0; border-top:1px solid var(--line); }
-  ul.markets li b { display:block; }
+  .obs-lead { max-width:640px; }
+  ul.obs { list-style:none; margin-top:28px; }
+  ul.obs li { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.8fr); gap:8px 40px; align-items:center; padding:18px 0; border-top:1px solid var(--line); }
+  ul.obs li:last-child { border-bottom:1px solid var(--line); }
+  .obs-what b { display:block; font-size:17px; font-weight:600; }
+  .obs-what span { display:block; font-size:15px; }
+  .obs-kit { display:flex; flex-wrap:wrap; gap:8px; justify-content:flex-end; }
+  .obs-kit span { font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--fg); border:1px solid #3a3a44; border-radius:999px; padding:4px 11px; white-space:nowrap; }
+  .obs-note { margin-top:14px; color:var(--muted); font-size:12px; }
+  @media (max-width:760px) { ul.obs li { grid-template-columns:1fr; } .obs-kit { justify-content:flex-start; } }
 
   .partners { text-align:center; }
   .partners .logos { display:flex; justify-content:center; flex-wrap:wrap; gap:40px 64px; }
@@ -351,15 +358,21 @@
 
   <section class="markets-sec">
     <div class="wrap">
-      <div>
-        <h2>Jedna platforma, više tržišta</h2>
-        <p class="muted">Stalni i autonomni nadzor bez emisija ugljika ondje gdje je pokrivenost slaba.</p>
-        <ul class="markets">
-          <li><b>Otkrivanje šumskih požara</b><span class="muted">Rana upozorenja za vatrogasce</span></li>
-          <li><b>Infrastruktura i javna uprava</b><span class="muted">Nadzor dalekovoda, cjevovoda, željeznice i morskih područja</span></li>
-          <li><b>Prijevoz tereta</b><span class="muted">Autonomni prijevoz tereta na srednje udaljenosti</span></li>
-        </ul>
-      </div>
+      <h2>Što nadzire</h2>
+      <p class="muted obs-lead">Jedan zračni brod ostaje iznad područja dan ili dulje i nosi senzore koji su potrebni za svaki zadatak. Svaka je primjena promatranje iz zraka.</p>
+      <ul class="obs">
+        <li><div class="obs-what"><b>Otkrivanje šumskih požara</b><span class="muted">Rano otkriva toplinu i dim, danju i noću, i nastavlja pratiti požar nakon što je otkriven.</span></div>
+          <div class="obs-kit"><span>Termalna kamera</span><span>Kamera sa zumom</span></div></li>
+        <li><div class="obs-what"><b>Dalekovodi</b><span class="muted">Pronalazi stabla koja urastaju u vodove i vruće točke na vodičima i spojevima prije nego što zakažu.</span></div>
+          <div class="obs-kit"><span>Lidar</span><span>Termalna kamera</span><span>Kamera sa zumom</span></div></li>
+        <li><div class="obs-what"><b>Cjevovodi</b><span class="muted">Nadzire trasu radi curenja plina te iskopa ili gradnje preblizu cijevi.</span></div>
+          <div class="obs-kit"><span>Kamera za snimanje plinova</span><span>Kamera sa zumom</span></div></li>
+        <li><div class="obs-what"><b>Željeznica i ceste</b><span class="muted">Provjerava pruge, usjeke i pokose te nakon oluja pronalazi srušena stabla i klizišta.</span></div>
+          <div class="obs-kit"><span>Lidar</span><span>Kamera sa zumom</span></div></li>
+        <li><div class="obs-what"><b>Obala i more</b><span class="muted">Prati brodove, otkriva naftne mrlje i podupire potragu i spašavanje daleko od obale.</span></div>
+          <div class="obs-kit"><span>Radar</span><span>AIS prijamnik</span><span>Termalna kamera</span></div></li>
+      </ul>
+      <p class="notes obs-note">Opremljenost senzorima ovisi o zadatku. Zračni brod je u razvoju; mogućnosti korisnog tereta projektni su ciljevi.</p>
     </div>
   </section>
 
