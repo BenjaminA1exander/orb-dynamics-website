@@ -77,6 +77,8 @@
     "<span>Gas imaging camera</span>": "<span>Dujų vaizdinimo kamera</span>",
     "<span>Radar</span>": "<span>Radaras</span>",
     "<span>AIS receiver</span>": "<span>AIS imtuvas</span>",
-    "Sensor fit depends on the mission. The airship is in development; payload options are design targets.": "Jutiklių komplektas priklauso nuo užduoties. Dirižablis kuriamas; naudingosios apkrovos galimybės yra projektiniai tikslai."
+    "Sensor fit depends on the mission. The airship is in development; payload options are design targets.": "Jutiklių komplektas priklauso nuo užduoties. Dirižablis kuriamas; naudingosios apkrovos galimybės yra projektiniai tikslai.",
+    "Tackling wildfires in rural areas": "Kova su gaisrais kaimo vietovėse",
+    "In sparsely populated countryside a fire can grow for a long time before anyone sees it. A fleet of airships keeps the whole area under watch, day and night.": "Retai apgyvendintose kaimo vietovėse gaisras gali ilgai plisti, kol kas nors jį pastebi. Dirižablių parkas visą teritoriją stebi dieną ir naktį."
   }
 }

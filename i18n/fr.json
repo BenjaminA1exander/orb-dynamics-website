@@ -77,6 +77,8 @@
     "<span>Gas imaging camera</span>": "<span>Caméra d’imagerie des gaz</span>",
     "<span>Radar</span>": "<span>Radar</span>",
     "<span>AIS receiver</span>": "<span>Récepteur AIS</span>",
-    "Sensor fit depends on the mission. The airship is in development; payload options are design targets.": "L’équipement en capteurs dépend de la mission. Le dirigeable est en développement ; les options de charge utile sont des objectifs de conception."
+    "Sensor fit depends on the mission. The airship is in development; payload options are design targets.": "L’équipement en capteurs dépend de la mission. Le dirigeable est en développement ; les options de charge utile sont des objectifs de conception.",
+    "Tackling wildfires in rural areas": "Lutter contre les feux en zone rurale",
+    "In sparsely populated countryside a fire can grow for a long time before anyone sees it. A fleet of airships keeps the whole area under watch, day and night.": "Dans les campagnes peu peuplées, un feu peut se propager longtemps avant que quelqu’un ne le voie. Une flotte de dirigeables garde toute la zone sous surveillance, de jour comme de nuit."
   }
 }
