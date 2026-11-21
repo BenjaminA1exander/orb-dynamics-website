@@ -109,7 +109,7 @@
   a { color:inherit; }
   .wrap { max-width:1100px; margin:0 auto; padding:0 24px; }
 
-  header { padding:24px 0; }
+  header { padding:24px 0; position:relative; z-index:10; }  /* above the hero render, which is pulled up under the title */
   header .wrap { display:flex; justify-content:space-between; align-items:center; }
   .logo img { display:block; height:16px; width:auto; }
   header a.cta { font-size:14px; text-decoration:none; border:1px solid var(--line); padding:8px 16px; border-radius:999px; }
@@ -134,7 +134,7 @@
      (translated) title pushes the image down rather than onto the airship. */
   .hero { position:relative; padding-top:clamp(16px,2.6vw,52px); }
   .hero .wrap { position:relative; z-index:2; max-width:none; }
-  .hero img.hero-scene { position:relative; z-index:1; width:100%; max-width:none; height:56.25vw; margin:-14.6vw 0 0; object-fit:cover;
+  .hero img.hero-scene { position:relative; z-index:1; pointer-events:none; width:100%; max-width:none; height:56.25vw; margin:-14.6vw 0 0; object-fit:cover;
     -webkit-mask-image:linear-gradient(to bottom, transparent 0, #000 20%, #000 84%, transparent);
             mask-image:linear-gradient(to bottom, transparent 0, #000 20%, #000 84%, transparent); }
   .hero h1 { text-shadow:0 2px 28px rgba(0,0,0,.35); font-size:clamp(32px,4.2vw,62px); text-wrap:balance; }
@@ -372,7 +372,7 @@
       <h2>What it watches</h2>
       <p class="muted obs-lead">One airship stays over an area for a day or more and carries the sensors each job needs. Every use is observation from the air.</p>
     </div>
-    <img class="obs-scene" src="img/powerline-inspection-1920.jpg" alt="Concept image: an ORB airship inspecting a high-voltage powerline above a conifer forest." width="1920" height="800" loading="lazy" decoding="async">
+    <img class="obs-scene" src="img/powerline-inspection-2560.jpg" alt="Concept image: an ORB airship inspecting a high-voltage powerline above a conifer forest." width="2560" height="1067" loading="lazy" decoding="async">
     <div class="wrap">
       <ul class="obs">
         <li><div class="obs-what"><b>Wildfire detection</b><span class="muted">Spot heat and smoke early, day and night, and keep watching the fire after it is found.</span></div>
